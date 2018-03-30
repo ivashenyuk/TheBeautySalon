@@ -1,0 +1,67 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 5
+			"vgap": 5
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"hgap": 2
+				"vgap": 1
+			} ) {
+				name: "workers"
+				"autoscrolls": true
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+					"hgap": 30
+					"vgap": 30
+				} ) {
+					name: "worker"
+					"maximumSize": new java.awt.Dimension( 2147483647, 200 )
+					"background": new java.awt.Color( 102, 255, 51, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "imgWorker"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "West"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "informationWorker"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "East"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "statistic"
+					"text": "Статистика"
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "schedule"
+					"text": "Робочий розклад"
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "profit"
+					"text": "Прибуток"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameUser"
+					"text": "Name User"
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 650, 395 )
+		} )
+	}
+}
