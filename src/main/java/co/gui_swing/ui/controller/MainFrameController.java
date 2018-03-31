@@ -20,7 +20,6 @@ public class MainFrameController {
 
     private void initComponent() {
         mainWindow = new MainWindow();
-        mainWindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
     private void initListener() {

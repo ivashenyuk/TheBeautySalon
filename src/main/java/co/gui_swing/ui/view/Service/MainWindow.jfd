@@ -8,31 +8,86 @@ new FormModel {
 			"vgap": 5
 		} ) {
 			name: "this"
-			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
-				"hgap": 2
-				"vgap": 1
-			} ) {
-				name: "workers"
+			"defaultCloseOperation": 3
+			"title": "Салон краси"
+			"minimumSize": new java.awt.Dimension( 850, 300 )
+			"$sizePolicy": 1
+			addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentResized", "thisComponentResized", true ) )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneWorkers"
+				"minimumSize": new java.awt.Dimension( 23, 9000 )
+				"horizontalScrollBarPolicy": 31
+				"verticalScrollBarPolicy": 22
+				"preferredSize": new java.awt.Dimension( 685, 9500 )
 				"autoscrolls": true
-				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
-					"hgap": 30
-					"vgap": 30
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
 				} ) {
-					name: "worker"
-					"maximumSize": new java.awt.Dimension( 2147483647, 200 )
-					"background": new java.awt.Color( 102, 255, 51, 255 )
-					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
-						name: "imgWorker"
-					}, new FormLayoutConstraints( class java.lang.String ) {
-						"value": "West"
+					name: "workersPanel"
+					"minimumSize": new java.awt.Dimension( 100, 400 )
+					"preferredSize": new java.awt.Dimension( 666, 880 )
+					"maximumSize": new java.awt.Dimension( 2147483647, 2147483647 )
+					"inheritsPopupMenu": true
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+						name: "workerPanel"
+						"maximumSize": new java.awt.Dimension( 2147483647, 200 )
+						"border": new javax.swing.border.EmptyBorder( 5, 5, 5, 5 )
+						"minimumSize": new java.awt.Dimension( 326, 200 )
+						"preferredSize": new java.awt.Dimension( 650, 200 )
+						"opaque": false
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+							name: "borderPanel"
+							"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "imgWorker"
+								"background": new java.awt.Color( 51, 255, 153, 255 )
+								"minimumSize": new java.awt.Dimension( 200, 200 )
+								"preferredSize": new java.awt.Dimension( 200, 200 )
+								"maximumSize": new java.awt.Dimension( 200, 200 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp label1:::p::p, space s:::p, comp kingOfServiceLable:::p:383:p}, seq l {comp label2:::p::p, space u:::p, comp priceLabel:::p::p}, comp nameLabel::l:p::p}, space ::33:x}, seq t {space ::409:x, comp orderBtn:::p:112:p, space :::p}}"
+								"$verticalGroup": "par l {seq {comp nameLabel:::p::p, space :::p, par b {comp kingOfServiceLable::b:p:40:p, comp label1::b:p:40:p}, space :::p, par b {comp label2::b:p::p, comp priceLabel::b:p::p}, space ::46:x, comp orderBtn:::p:36:p, space :::p}}"
+							} ) {
+								name: "informationWorker"
+								"preferredSize": new java.awt.Dimension( 500, 0 )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "nameLabel"
+									"text": "Ivashenuik Yurii Olexandrovich"
+									"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 8, false )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label1"
+									"text": "Вид послуг:"
+									"font": new java.awt.Font( "Tahoma", 0, 16 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "kingOfServiceLable"
+									"text": "Масаж"
+									"font": new java.awt.Font( "Tahoma", 2, 16 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "Ціна: "
+									"font": new java.awt.Font( "Tahoma", 0, 16 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "priceLabel"
+									"text": "100$"
+									"font": new java.awt.Font( "Tahoma", 2, 16 )
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "orderBtn"
+									"text": "Замовоти"
+									"preferredSize": new java.awt.Dimension( 80, 25 )
+									"maximumSize": new java.awt.Dimension( 80, 25 )
+									"minimumSize": new java.awt.Dimension( 80, 25 )
+									"hideActionText": true
+									"font": new java.awt.Font( "Tahoma", 0, 14 )
+								} )
+							} )
+						} )
 					} )
-					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
-						name: "informationWorker"
-					}, new FormLayoutConstraints( class java.lang.String ) {
-						"value": "East"
-					} )
-				}, new FormLayoutConstraints( class java.lang.String ) {
-					"value": "Center"
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
 				"value": "Center"
@@ -61,7 +116,7 @@ new FormModel {
 			}
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 650, 395 )
+			"size": new java.awt.Dimension( 765, 880 )
 		} )
 	}
 }

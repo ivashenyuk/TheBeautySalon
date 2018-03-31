@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>MainWindow.jfd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainWindow.jfd</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">JFDML JFormDesigner: &quot;6.0.2.0.116&quot; Java: &quot;1.8.0_152-release&quot; encoding: &quot;UTF-8&quot; 
+ 
+new FormModel { 
+    contentType: &quot;form/swing&quot; 
+    root: new FormRoot { 
+        add( new FormWindow( &quot;javax.swing.JFrame&quot;, new FormLayoutManager( class java.awt.BorderLayout ) { 
+            &quot;hgap&quot;: 5 
+            &quot;vgap&quot;: 5 
+        } ) { 
+            name: &quot;this&quot; 
+            &quot;defaultCloseOperation&quot;: 3 
+            &quot;title&quot;: &quot;Салон краси&quot; 
+            &quot;minimumSize&quot;: new java.awt.Dimension( 850, 300 ) 
+            &quot;$sizePolicy&quot;: 1 
+            addEvent( new FormEvent( &quot;java.awt.event.ComponentListener&quot;, &quot;componentResized&quot;, &quot;thisComponentResized&quot;, true ) ) 
+            add( new FormContainer( &quot;javax.swing.JScrollPane&quot;, new FormLayoutManager( class javax.swing.JScrollPane ) ) { 
+                name: &quot;scrollPaneWorkers&quot; 
+                &quot;minimumSize&quot;: new java.awt.Dimension( 23, 9000 ) 
+                &quot;horizontalScrollBarPolicy&quot;: 31 
+                &quot;verticalScrollBarPolicy&quot;: 22 
+                &quot;preferredSize&quot;: new java.awt.Dimension( 685, 9500 ) 
+                &quot;autoscrolls&quot;: true 
+                add( new FormContainer( &quot;javax.swing.JPanel&quot;, new FormLayoutManager( class javax.swing.BoxLayout ) { 
+                    &quot;axis&quot;: 1 
+                } ) { 
+                    name: &quot;workersPanel&quot; 
+                    &quot;minimumSize&quot;: new java.awt.Dimension( 100, 400 ) 
+                    &quot;preferredSize&quot;: new java.awt.Dimension( 666, 880 ) 
+                    &quot;maximumSize&quot;: new java.awt.Dimension( 2147483647, 2147483647 ) 
+                    &quot;inheritsPopupMenu&quot;: true 
+                    add( new FormContainer( &quot;javax.swing.JPanel&quot;, new FormLayoutManager( class javax.swing.BoxLayout ) ) { 
+                        name: &quot;workerPanel&quot; 
+                        &quot;maximumSize&quot;: new java.awt.Dimension( 2147483647, 200 ) 
+                        &quot;border&quot;: new javax.swing.border.EmptyBorder( 5, 5, 5, 5 ) 
+                        &quot;minimumSize&quot;: new java.awt.Dimension( 326, 200 ) 
+                        &quot;preferredSize&quot;: new java.awt.Dimension( 650, 200 ) 
+                        &quot;opaque&quot;: false 
+                        add( new FormContainer( &quot;javax.swing.JPanel&quot;, new FormLayoutManager( class javax.swing.BoxLayout ) ) { 
+                            name: &quot;borderPanel&quot; 
+                            &quot;border&quot;: new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false ) 
+                            add( new FormContainer( &quot;javax.swing.JPanel&quot;, new FormLayoutManager( class java.awt.BorderLayout ) ) { 
+                                name: &quot;imgWorker&quot; 
+                                &quot;background&quot;: new java.awt.Color( 51, 255, 153, 255 ) 
+                                &quot;minimumSize&quot;: new java.awt.Dimension( 200, 200 ) 
+                                &quot;preferredSize&quot;: new java.awt.Dimension( 200, 200 ) 
+                                &quot;maximumSize&quot;: new java.awt.Dimension( 200, 200 ) 
+                            } ) 
+                            add( new FormContainer( &quot;javax.swing.JPanel&quot;, new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) { 
+                                &quot;$horizontalGroup&quot;: &quot;par l {seq {space :::p, par l {seq {comp label1:::p::p, space s:::p, comp kingOfServiceLable:::p:383:p}, seq l {comp label2:::p::p, space u:::p, comp priceLabel:::p::p}, comp nameLabel::l:p::p}, space ::33:x}, seq t {space ::409:x, comp orderBtn:::p:112:p, space :::p}}&quot; 
+                                &quot;$verticalGroup&quot;: &quot;par l {seq {comp nameLabel:::p::p, space :::p, par b {comp kingOfServiceLable::b:p:40:p, comp label1::b:p:40:p}, space :::p, par b {comp label2::b:p::p, comp priceLabel::b:p::p}, space ::46:x, comp orderBtn:::p:36:p, space :::p}}&quot; 
+                            } ) { 
+                                name: &quot;informationWorker&quot; 
+                                &quot;preferredSize&quot;: new java.awt.Dimension( 500, 0 ) 
+                                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                                    name: &quot;nameLabel&quot; 
+                                    &quot;text&quot;: &quot;Ivashenuik Yurii Olexandrovich&quot; 
+                                    &quot;font&quot;: new com.jformdesigner.model.SwingDerivedFont( null, 1, 8, false ) 
+                                } ) 
+                                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                                    name: &quot;label1&quot; 
+                                    &quot;text&quot;: &quot;Вид послуг:&quot; 
+                                    &quot;font&quot;: new java.awt.Font( &quot;Tahoma&quot;, 0, 16 ) 
+                                } ) 
+                                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                                    name: &quot;kingOfServiceLable&quot; 
+                                    &quot;text&quot;: &quot;Масаж&quot; 
+                                    &quot;font&quot;: new java.awt.Font( &quot;Tahoma&quot;, 2, 16 ) 
+                                } ) 
+                                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                                    name: &quot;label2&quot; 
+                                    &quot;text&quot;: &quot;Ціна: &quot; 
+                                    &quot;font&quot;: new java.awt.Font( &quot;Tahoma&quot;, 0, 16 ) 
+                                } ) 
+                                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                                    name: &quot;priceLabel&quot; 
+                                    &quot;text&quot;: &quot;100$&quot; 
+                                    &quot;font&quot;: new java.awt.Font( &quot;Tahoma&quot;, 2, 16 ) 
+                                } ) 
+                                add( new FormComponent( &quot;javax.swing.JButton&quot; ) { 
+                                    name: &quot;orderBtn&quot; 
+                                    &quot;text&quot;: &quot;Замовоти&quot; 
+                                    &quot;preferredSize&quot;: new java.awt.Dimension( 80, 25 ) 
+                                    &quot;maximumSize&quot;: new java.awt.Dimension( 80, 25 ) 
+                                    &quot;minimumSize&quot;: new java.awt.Dimension( 80, 25 ) 
+                                    &quot;hideActionText&quot;: true 
+                                    &quot;font&quot;: new java.awt.Font( &quot;Tahoma&quot;, 0, 14 ) 
+                                } ) 
+                            } ) 
+                        } ) 
+                    } ) 
+                } ) 
+            }, new FormLayoutConstraints( class java.lang.String ) { 
+                &quot;value&quot;: &quot;Center&quot; 
+            } ) 
+            menuBar: new FormContainer( &quot;javax.swing.JMenuBar&quot;, new FormLayoutManager( class javax.swing.JMenuBar ) ) { 
+                name: &quot;menuBar1&quot; 
+                add( new FormContainer( &quot;javax.swing.JMenu&quot;, new FormLayoutManager( class javax.swing.JMenu ) ) { 
+                    name: &quot;statistic&quot; 
+                    &quot;text&quot;: &quot;Статистика&quot; 
+                } ) 
+                add( new FormContainer( &quot;javax.swing.JMenu&quot;, new FormLayoutManager( class javax.swing.JMenu ) ) { 
+                    name: &quot;schedule&quot; 
+                    &quot;text&quot;: &quot;Робочий розклад&quot; 
+                } ) 
+                add( new FormContainer( &quot;javax.swing.JMenu&quot;, new FormLayoutManager( class javax.swing.JMenu ) ) { 
+                    name: &quot;profit&quot; 
+                    &quot;text&quot;: &quot;Прибуток&quot; 
+                } ) 
+                add( new FormComponent( &quot;com.jformdesigner.designer.wrapper.HSpacer&quot; ) { 
+                    name: &quot;hSpacer1&quot; 
+                } ) 
+                add( new FormComponent( &quot;javax.swing.JLabel&quot; ) { 
+                    name: &quot;nameUser&quot; 
+                    &quot;text&quot;: &quot;Name User&quot; 
+                } ) 
+            } 
+        }, new FormLayoutConstraints( null ) { 
+            &quot;location&quot;: new java.awt.Point( 0, 0 ) 
+            &quot;size&quot;: new java.awt.Dimension( 765, 880 ) 
+        } ) 
+    } 
+} 
+</span></pre>
+</body>
+</html>
