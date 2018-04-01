@@ -20,7 +20,16 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="JGoodies Forms" level="project" />
-    <orderEntry type="library" name="GroupLayout" level="project" />
+    <orderEntry type="library" exported="" name="JGoodies Forms" level="project" />
+    <orderEntry type="library" exported="" name="GroupLayout" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/jcalendar-0.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

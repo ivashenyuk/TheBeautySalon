@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78478715-12b7-4033-b91e-9e7af4ca75c5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GroupLayout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/JGoodies_Forms.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-common-javadoc.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-common-sources.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-common.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-forms-javadoc.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-forms-sources.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/jgoodies-forms.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/swing-layout-javadoc.zip" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/swing-layout-src.zip" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/swing-layout.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.jfd" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ForTheBeautySalon.iml" afterPath="$PROJECT_DIR$/ForTheBeautySalon.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$MyAction.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$MyAction.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow$2.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow$2.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/view/Service/MainWindow.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,29 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.jfd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd">
+      <file leaf-file-name="CheckWindow.jfd" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.jfd">
           <provider selected="true" editor-type-id="JFormDesigner">
-            <state propertiesWidth="442" />
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java">
+      <file leaf-file-name="CheckWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+            <state relative-caret-position="200">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#1308#1480#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="e#3855#4115#0" expanded="true" />
-                <element signature="e#4114#4115#0" expanded="true" />
-                <element signature="e#5241#5249#0" expanded="true" />
-                <marker date="1522518296342" expanded="true" signature="595:4694" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1522518296342" expanded="true" signature="4706:5183" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <element signature="e#688#775#0" expanded="false" />
+                <element signature="e#9544#9545#0" expanded="true" />
+                <element signature="e#9581#9582#0" expanded="true" />
+                <marker date="1522590162491" expanded="false" signature="688:9514" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1522590162491" expanded="false" signature="9587:10260" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
@@ -109,7 +91,9 @@
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd" />
+        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.jfd" />
       </list>
     </option>
   </component>
@@ -163,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,34 +158,44 @@
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui_swing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui_swing" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui_swing" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
@@ -208,8 +203,20 @@
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="exportToHTML" type="462c0819:PsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui_swing" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="Check" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui_swing" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
@@ -219,6 +226,7 @@
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,7 +234,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -240,7 +247,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="right" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sea Battle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jcalendar-0.8.1.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -412,12 +419,17 @@
       <workItem from="1522512072407" duration="1772000" />
       <workItem from="1522513885990" duration="1773000" />
       <workItem from="1522515703181" duration="1768000" />
-      <workItem from="1522517546385" duration="781000" />
+      <workItem from="1522517546385" duration="1410000" />
+      <workItem from="1522523909094" duration="1692000" />
+      <workItem from="1522525650290" duration="1769000" />
+      <workItem from="1522527462175" duration="958000" />
+      <workItem from="1522587326305" duration="1831000" />
+      <workItem from="1522589185766" duration="1293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41735000" />
+    <option name="totallyTimeSpent" value="49907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
@@ -435,7 +447,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16453674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17252396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -469,30 +481,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#1308#1480#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#3855#4115#0" expanded="true" />
-            <element signature="e#4114#4115#0" expanded="true" />
-            <element signature="e#5241#5249#0" expanded="true" />
-            <marker date="1522518296342" expanded="true" signature="595:4694" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1522518296342" expanded="true" signature="4706:5183" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="0" propertiesWidth="0" structureHeight="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -512,16 +500,12 @@
         <state relative-caret-position="200">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#1308#1480#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#3855#4115#0" expanded="true" />
-            <element signature="e#4114#4115#0" expanded="true" />
-            <element signature="e#5241#5249#0" expanded="true" />
-            <marker date="1522518296342" expanded="true" signature="595:4694" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1522518296342" expanded="true" signature="4706:5183" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <element signature="method#initComponents#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#5706#5930#0" expanded="true" />
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#6267#6412#0" expanded="true" />
+            <element signature="e#6411#6412#0" expanded="true" />
+            <marker date="1522589979416" expanded="true" signature="4753:5230" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -687,23 +671,38 @@
         <state propertiesWidth="442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+        <state relative-caret-position="200">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#1308#1480#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#3855#4115#0" expanded="true" />
-            <element signature="e#4114#4115#0" expanded="true" />
-            <element signature="e#5241#5249#0" expanded="true" />
-            <marker date="1522518296342" expanded="true" signature="595:4694" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1522518296342" expanded="true" signature="4706:5183" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <element signature="e#688#775#0" expanded="false" />
+            <element signature="e#9544#9545#0" expanded="true" />
+            <element signature="e#9581#9582#0" expanded="true" />
+            <marker date="1522590162491" expanded="false" signature="688:9514" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1522590162491" expanded="false" signature="9587:10260" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="157" column="67" lean-forward="false" selection-start-line="157" selection-start-column="67" selection-end-line="157" selection-end-column="67" />
+          <folding>
+            <element signature="method#initComponents#0;class#MainWindow#0" expanded="false" />
+            <element signature="e#5706#5930#0" expanded="true" />
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#6267#6412#0" expanded="true" />
+            <element signature="e#6411#6412#0" expanded="true" />
+            <marker date="1522589979416" expanded="true" signature="4753:5230" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Check/CheckWindow.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
       </provider>
     </entry>
   </component>
@@ -771,6 +770,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>GroupLayout</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

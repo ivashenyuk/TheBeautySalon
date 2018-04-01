@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Чек"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par t:::p {comp label3::t:::x, comp label5::l:::x, comp label1::l:::x, comp label6::t:::x}, space s:::p, par l {comp label4::::200:x, comp kingOfServiceLable::l::200:x, seq t {par l {comp textField1::::190:x, comp datePanel::::190:x}, space :::p}}}, seq l {par t:::p {comp label2:::::x, comp label7:::::x}, space s:::p, par l {comp label8::l::244:x, comp label9::l::244:x}}}}, seq t {space ::185:x, comp button1:::p::p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp kingOfServiceLable::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp textField1::b:p::p}, space s:::p, par l {comp label6:::p::p, comp datePanel:::p:190:p}, space :::p, par t {comp label7:::p::p, comp label8:::p::p}, space s:::p, par b {comp label2::b:p::p, comp label9::b:p::p}, space u:::p, comp button1:::p:33:p, space :::x}}"
+				"honorsVisibility": false
+			} ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 330, 425 )
+				"opaque": false
+				"maximumSize": new java.awt.Dimension( 304, 395 )
+				"minimumSize": new java.awt.Dimension( 294, 395 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Вид послуг:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "kingOfServiceLable"
+					"text": "Масаж"
+					"font": new java.awt.Font( "Tahoma", 2, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Виконавець:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Ivashenuik Yurii Olexandrovich"
+					"font": new java.awt.Font( "Tahoma", 2, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Замовник:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"font": new java.awt.Font( "Tahoma", 2, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Дата:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Ціна:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "100$"
+					"font": new java.awt.Font( "Tahoma", 2, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Email:"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "yura.ivash@gmail.com"
+					"font": new java.awt.Font( "Tahoma", 2, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Підтвердити"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "datePanel"
+					add( new FormComponent( "de.wannawork.jcalendar.JCalendarPanel" ) {
+						name: "calendarPanel1"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "West"
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 310, 455 )
+		} )
+	}
+}

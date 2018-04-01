@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.*;
 
+import co.gui_swing.ui.view.Check.CheckWindow;
 import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
@@ -140,7 +141,7 @@ public class MainWindow extends JFrame {
 
     // JFormDesigner - End of variables declaration  //GEN-END:variables
     private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
-
+    private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
     public static Image getImage(String name) {
         String filename = "E://" + name;
         Image gras = Toolkit.getDefaultToolkit().getImage(filename);
@@ -149,24 +150,26 @@ public class MainWindow extends JFrame {
 
     private void createWorkers() {
         JPanel workerPanel = new JPanel();
-        JPanel borderPanel;
-        JPanel imgWorker;
-        JPanel informationWorker;
-        JLabel nameLabel;
-        JLabel label1;
-        JLabel kingOfServiceLable;
-        JLabel label2;
-        JLabel priceLabel;
-        JButton orderBtn;
-        borderPanel = new JPanel();
-        imgWorker = new JPanel();
-        informationWorker = new JPanel();
-        nameLabel = new JLabel();
-        label1 = new JLabel();
-        kingOfServiceLable = new JLabel();
-        label2 = new JLabel();
-        priceLabel = new JLabel();
-        orderBtn = new JButton();
+        JPanel borderPanel = new JPanel();
+        JPanel imgWorker = new JPanel(){
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(getImage("img.jpg"), 0,0,200,200,this);
+            }
+        };
+        JPanel informationWorker = new JPanel();
+        JLabel nameLabel = new JLabel();
+        JLabel label1 = new JLabel();
+        JLabel kingOfServiceLable = new JLabel();
+        JLabel label2 = new JLabel();
+        JLabel priceLabel = new JLabel();
+        JButton orderBtn = new JButton();
+        orderBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new CheckWindow().SHOW();
+            }
+        });
         //======== workerPanel ========
         {
             workerPanel.setMaximumSize(new Dimension(2147483647, 200));
@@ -266,5 +269,6 @@ public class MainWindow extends JFrame {
             workerPanel.add(borderPanel);
         }
         listWorkers.add(workerPanel);
+        listBtnOrder.add(orderBtn);
     }
 }
