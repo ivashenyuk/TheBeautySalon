@@ -7,8 +7,8 @@ new FormModel {
 			name: "this"
 			"title": "Чек"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par t:::p {comp label3::t:::x, comp label5::l:::x, comp label1::l:::x, comp label6::t:::x}, space s:::p, par l {comp label4::::200:x, comp kingOfServiceLable::l::200:x, seq t {par l {comp textField1::::190:x, comp datePanel::::190:x}, space :::p}}}, seq l {par t:::p {comp label2:::::x, comp label7:::::x}, space s:::p, par l {comp label8::l::244:x, comp label9::l::244:x}}}}, seq t {space ::185:x, comp button1:::p::p, space :::p}}"
-				"$verticalGroup": "par l {seq l {space :::p, par b {comp kingOfServiceLable::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp textField1::b:p::p}, space s:::p, par l {comp label6:::p::p, comp datePanel:::p:190:p}, space :::p, par t {comp label7:::p::p, comp label8:::p::p}, space s:::p, par b {comp label2::b:p::p, comp label9::b:p::p}, space u:::p, comp button1:::p:33:p, space :::x}}"
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par t:::p {comp label3::t:::x, comp label5::l:::x, comp label1::l:::x, comp label6::t:::x}, space s:::p, par l {comp workerLable::::200:x, comp kingOfServiceLable::l::200:x, seq t {par l {comp customer::::190:x, comp datePanel::::190:x}, space :::p}}}, seq l {par t:::p {comp label2:::::x, comp label7:::::x}, space s:::p, par l {comp priceLable::l::244:x, comp emailLable::l::244:x}}}}, seq t {space ::185:x, comp confirmBtn:::p::p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp kingOfServiceLable::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp workerLable::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp customer::b:p::p}, space s:::p, par l {comp label6:::p::p, comp datePanel:::p:190:p}, space :::p, par t {comp label7:::p::p, comp priceLable:::p::p}, space s:::p, par b {comp label2::b:p::p, comp emailLable::b:p::p}, space u:::p, comp confirmBtn:::p:33:p, space :::x}}"
 				"honorsVisibility": false
 			} ) {
 				name: "panel1"
@@ -32,7 +32,7 @@ new FormModel {
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label4"
+					name: "workerLable"
 					"text": "Ivashenuik Yurii Olexandrovich"
 					"font": new java.awt.Font( "Tahoma", 2, 14 )
 				} )
@@ -42,7 +42,7 @@ new FormModel {
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField1"
+					name: "customer"
 					"font": new java.awt.Font( "Tahoma", 2, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
@@ -56,7 +56,7 @@ new FormModel {
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label8"
+					name: "priceLable"
 					"text": "100$"
 					"font": new java.awt.Font( "Tahoma", 2, 14 )
 				} )
@@ -66,19 +66,19 @@ new FormModel {
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label9"
+					name: "emailLable"
 					"text": "yura.ivash@gmail.com"
 					"font": new java.awt.Font( "Tahoma", 2, 14 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "button1"
+					name: "confirmBtn"
 					"text": "Підтвердити"
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
 					name: "datePanel"
 					add( new FormComponent( "de.wannawork.jcalendar.JCalendarPanel" ) {
-						name: "calendarPanel1"
+						name: "dateOrder"
 					}, new FormLayoutConstraints( class java.lang.String ) {
 						"value": "West"
 					} )

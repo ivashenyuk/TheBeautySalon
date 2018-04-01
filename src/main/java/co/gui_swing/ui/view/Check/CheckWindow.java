@@ -39,17 +39,17 @@ public class CheckWindow extends JDialog {
         label1 = new JLabel();
         kingOfServiceLable = new JLabel();
         label3 = new JLabel();
-        label4 = new JLabel();
+        workerLable = new JLabel();
         label5 = new JLabel();
-        textField1 = new JTextField();
+        customer = new JTextField();
         label6 = new JLabel();
         label7 = new JLabel();
-        label8 = new JLabel();
+        priceLable = new JLabel();
         label2 = new JLabel();
-        label9 = new JLabel();
-        button1 = new JButton();
+        emailLable = new JLabel();
+        confirmBtn = new JButton();
         datePanel = new JPanel();
-        calendarPanel1 = new JCalendarPanel();
+        dateOrder = new JCalendarPanel();
 
         //======== this ========
         setTitle("\u0427\u0435\u043a");
@@ -83,16 +83,16 @@ public class CheckWindow extends JDialog {
             label3.setText("\u0412\u0438\u043a\u043e\u043d\u0430\u0432\u0435\u0446\u044c:");
             label3.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
-            //---- label4 ----
-            label4.setText("Ivashenuik Yurii Olexandrovich");
-            label4.setFont(new Font("Tahoma", Font.ITALIC, 14));
+            //---- workerLable ----
+            workerLable.setText("Ivashenuik Yurii Olexandrovich");
+            workerLable.setFont(new Font("Tahoma", Font.ITALIC, 14));
 
             //---- label5 ----
             label5.setText("\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a:");
             label5.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
-            //---- textField1 ----
-            textField1.setFont(new Font("Tahoma", Font.ITALIC, 14));
+            //---- customer ----
+            customer.setFont(new Font("Tahoma", Font.ITALIC, 14));
 
             //---- label6 ----
             label6.setText("\u0414\u0430\u0442\u0430:");
@@ -102,26 +102,26 @@ public class CheckWindow extends JDialog {
             label7.setText("\u0426\u0456\u043d\u0430:");
             label7.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
-            //---- label8 ----
-            label8.setText("100$");
-            label8.setFont(new Font("Tahoma", Font.ITALIC, 14));
+            //---- priceLable ----
+            priceLable.setText("100$");
+            priceLable.setFont(new Font("Tahoma", Font.ITALIC, 14));
 
             //---- label2 ----
             label2.setText("Email:");
             label2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
-            //---- label9 ----
-            label9.setText("yura.ivash@gmail.com");
-            label9.setFont(new Font("Tahoma", Font.ITALIC, 14));
+            //---- emailLable ----
+            emailLable.setText("yura.ivash@gmail.com");
+            emailLable.setFont(new Font("Tahoma", Font.ITALIC, 14));
 
-            //---- button1 ----
-            button1.setText("\u041f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0438");
-            button1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+            //---- confirmBtn ----
+            confirmBtn.setText("\u041f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0438");
+            confirmBtn.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
             //======== datePanel ========
             {
                 datePanel.setLayout(new BorderLayout());
-                datePanel.add(calendarPanel1, BorderLayout.WEST);
+                datePanel.add(dateOrder, BorderLayout.WEST);
             }
 
             GroupLayout panel1Layout = new GroupLayout(panel1);
@@ -140,11 +140,11 @@ public class CheckWindow extends JDialog {
                                     .add(label6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .add(18, 18, 18)
                                 .add(panel1Layout.createParallelGroup()
-                                    .add(label4, GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                    .add(workerLable, GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                                     .add(kingOfServiceLable, GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                                     .add(GroupLayout.TRAILING, panel1Layout.createSequentialGroup()
                                         .add(panel1Layout.createParallelGroup()
-                                            .add(textField1, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                                            .add(customer, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
                                             .add(datePanel, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE))
                                         .addContainerGap())))
                             .add(panel1Layout.createSequentialGroup()
@@ -153,11 +153,11 @@ public class CheckWindow extends JDialog {
                                     .add(label7, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .add(18, 18, 18)
                                 .add(panel1Layout.createParallelGroup()
-                                    .add(label8, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                                    .add(label9, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)))))
+                                    .add(priceLable, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
+                                    .add(emailLable, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)))))
                     .add(GroupLayout.TRAILING, panel1Layout.createSequentialGroup()
                         .addContainerGap(185, Short.MAX_VALUE)
-                        .add(button1)
+                        .add(confirmBtn)
                         .addContainerGap())
             );
             panel1Layout.setVerticalGroup(
@@ -170,11 +170,11 @@ public class CheckWindow extends JDialog {
                         .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup(GroupLayout.BASELINE)
                             .add(label3)
-                            .add(label4))
+                            .add(workerLable))
                         .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup(GroupLayout.BASELINE)
                             .add(label5)
-                            .add(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                            .add(customer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                         .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup()
                             .add(label6)
@@ -182,13 +182,13 @@ public class CheckWindow extends JDialog {
                         .addPreferredGap(LayoutStyle.RELATED)
                         .add(panel1Layout.createParallelGroup(GroupLayout.TRAILING)
                             .add(label7)
-                            .add(label8))
+                            .add(priceLable))
                         .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup(GroupLayout.BASELINE)
                             .add(label2)
-                            .add(label9))
+                            .add(emailLable))
                         .addPreferredGap(LayoutStyle.UNRELATED)
-                        .add(button1, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
+                        .add(confirmBtn, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             );
         }
@@ -207,16 +207,16 @@ public class CheckWindow extends JDialog {
     private JLabel label1;
     private JLabel kingOfServiceLable;
     private JLabel label3;
-    private JLabel label4;
+    private JLabel workerLable;
     private JLabel label5;
-    private JTextField textField1;
+    private JTextField customer;
     private JLabel label6;
     private JLabel label7;
-    private JLabel label8;
+    private JLabel priceLable;
     private JLabel label2;
-    private JLabel label9;
-    private JButton button1;
+    private JLabel emailLable;
+    private JButton confirmBtn;
     private JPanel datePanel;
-    private JCalendarPanel calendarPanel1;
+    private JCalendarPanel dateOrder;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

@@ -28,6 +28,10 @@ public class MainWindow extends JFrame {
     }
 
 
+    public JPanel getWorkersPanel() {
+        return workersPanel;
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
@@ -109,14 +113,7 @@ public class MainWindow extends JFrame {
                         if ("border".equals(e.getPropertyName())) throw new RuntimeException();
                     }
                 });
-
                 workersPanel.setLayout(new BoxLayout(workersPanel, BoxLayout.Y_AXIS));
-
-                createWorkers();
-                createWorkers();
-                for (JPanel worker : listWorkers) {
-                    workersPanel.add(worker);
-                }
 
             }
             scrollPaneWorkers.setViewportView(workersPanel);
@@ -139,23 +136,26 @@ public class MainWindow extends JFrame {
     private JPanel workersPanel;
 
 
+    public ArrayList<JPanel> getListWorkers() {
+        return listWorkers;
+    }
+
+    public ArrayList<JButton> getListBtnOrder() {
+        return listBtnOrder;
+    }
+
     // JFormDesigner - End of variables declaration  //GEN-END:variables
     private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
     private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
-    public static Image getImage(String name) {
-        String filename = "E://" + name;
-        Image gras = Toolkit.getDefaultToolkit().getImage(filename);
-        return gras;
-    }
 
-    private void createWorkers() {
+    public void createWorkers(final Image img, String nameWorker, String price, String kingOfService) {
         JPanel workerPanel = new JPanel();
         JPanel borderPanel = new JPanel();
         JPanel imgWorker = new JPanel(){
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(getImage("img.jpg"), 0,0,200,200,this);
+                g.drawImage(img, 0,0,200,200,this);
             }
         };
         JPanel informationWorker = new JPanel();
@@ -165,11 +165,7 @@ public class MainWindow extends JFrame {
         JLabel label2 = new JLabel();
         JLabel priceLabel = new JLabel();
         JButton orderBtn = new JButton();
-        orderBtn.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                new CheckWindow().SHOW();
-            }
-        });
+
         //======== workerPanel ========
         {
             workerPanel.setMaximumSize(new Dimension(2147483647, 200));
@@ -199,7 +195,7 @@ public class MainWindow extends JFrame {
                     informationWorker.setPreferredSize(new Dimension(500, 0));
 
                     //---- nameLabel ----
-                    nameLabel.setText("Ivashenuik Yurii Olexandrovich");
+                    nameLabel.setText(nameWorker);
                     nameLabel.setFont(nameLabel.getFont().deriveFont(nameLabel.getFont().getStyle() | Font.BOLD, nameLabel.getFont().getSize() + 8f));
 
                     //---- label1 ----
@@ -207,7 +203,7 @@ public class MainWindow extends JFrame {
                     label1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 
                     //---- kingOfServiceLable ----
-                    kingOfServiceLable.setText("\u041c\u0430\u0441\u0430\u0436");
+                    kingOfServiceLable.setText(kingOfService);
                     kingOfServiceLable.setFont(new Font("Tahoma", Font.ITALIC, 16));
 
                     //---- label2 ----
@@ -215,7 +211,7 @@ public class MainWindow extends JFrame {
                     label2.setFont(new Font("Tahoma", Font.PLAIN, 16));
 
                     //---- priceLabel ----
-                    priceLabel.setText("100$");
+                    priceLabel.setText(price);
                     priceLabel.setFont(new Font("Tahoma", Font.ITALIC, 16));
 
                     //---- orderBtn ----
