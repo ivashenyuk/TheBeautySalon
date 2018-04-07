@@ -7,12 +7,12 @@ new FormModel {
 			name: "this"
 			"title": "Чек"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par t:::p {comp label3::t:::x, comp label5::l:::x, comp label1::l:::x, comp label6::t:::x}, space s:::p, par l {comp workerLable::::200:x, comp kingOfServiceLable::l::200:x, seq t {par l {comp customer::::190:x, comp datePanel::::190:x}, space :::p}}}, seq l {par t:::p {comp label2:::::x, comp label7:::::x}, space s:::p, par l {comp priceLable::l::244:x, comp emailLable::l::244:x}}}}, seq t {space ::185:x, comp confirmBtn:::p::p, space :::p}}"
-				"$verticalGroup": "par l {seq l {space :::p, par b {comp kingOfServiceLable::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp workerLable::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp customer::b:p::p}, space s:::p, par l {comp label6:::p::p, comp datePanel:::p:190:p}, space :::p, par t {comp label7:::p::p, comp priceLable:::p::p}, space s:::p, par b {comp label2::b:p::p, comp emailLable::b:p::p}, space u:::p, comp confirmBtn:::p:33:p, space :::x}}"
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par t:::p {comp label3::t:::x, comp label5::l:::x, comp label1::l:::x, comp label6::t:::x}, space s:::p, par l {comp workerLable:::::x, comp kingOfServiceLable::l:::x, seq t {par l {comp customer:::::x, comp datePanel:::::x}, space :::p}}}, seq l {par t:::p {comp label2:::::x, comp label7:::p:36:p}, space s:::p, par l {comp priceLable::l:::x, comp emailLable::l:::x}}, seq t {space ::175:p, comp confirmBtn:::p::p, space :::p}}}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp kingOfServiceLable::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp workerLable::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp customer::b:p::p}, space s:::p, par l {comp label6:::p::p, comp datePanel:::p::p}, space s:::p, par t {comp label7:::p::p, comp priceLable:::p::p}, space s:::p, par b {comp label2::b:p::p, comp emailLable::b:p::p}, space u:::p, comp confirmBtn:::p:33:p, space ::32:x}}"
 				"honorsVisibility": false
 			} ) {
 				name: "panel1"
-				"preferredSize": new java.awt.Dimension( 330, 425 )
+				"preferredSize": new java.awt.Dimension( 360, 300 )
 				"opaque": false
 				"maximumSize": new java.awt.Dimension( 304, 395 )
 				"minimumSize": new java.awt.Dimension( 294, 395 )
@@ -44,6 +44,7 @@ new FormModel {
 				add( new FormComponent( "javax.swing.JTextField" ) {
 					name: "customer"
 					"font": new java.awt.Font( "Tahoma", 2, 14 )
+					"opaque": false
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label6"
@@ -75,12 +76,18 @@ new FormModel {
 					"text": "Підтвердити"
 					"font": new java.awt.Font( "Tahoma", 0, 14 )
 				} )
-				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {comp dateOrder:::p::p, space :0:0:x}}"
+					"$verticalGroup": "par l {seq l {comp dateOrder:::p::p, space :0:12:x}}"
+				} ) {
 					name: "datePanel"
-					add( new FormComponent( "de.wannawork.jcalendar.JCalendarPanel" ) {
+					add( new FormComponent( "javax.swing.JSpinner" ) {
 						name: "dateOrder"
-					}, new FormLayoutConstraints( class java.lang.String ) {
-						"value": "West"
+						"model": new javax.swing.SpinnerDateModel {
+							end: new java.util.Date( 1744019640000l )
+							start: new java.util.Date( -9223372036854775808l )
+							value: new java.util.Date( -9223372036854775808l )
+						}
 					} )
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
@@ -88,7 +95,7 @@ new FormModel {
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 310, 455 )
+			"size": new java.awt.Dimension( 310, 330 )
 		} )
 	}
 }

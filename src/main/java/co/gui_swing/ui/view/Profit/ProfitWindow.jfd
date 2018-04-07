@@ -6,10 +6,14 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
 			name: "this"
 			"title": "Прибуток"
-			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp scrollPane1::::398:x}"
+				"$verticalGroup": "par l {comp scrollPane1::::303:x}"
+			} ) {
 				name: "panel1"
 				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
 					name: "scrollPane1"
+					"minimumSize": new java.awt.Dimension( 400, 300 )
 					add( new FormComponent( "javax.swing.JTable" ) {
 						name: "tableProfit"
 						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
@@ -29,16 +33,15 @@ new FormModel {
 							add( null )
 							add( null )
 						} )
+						"preferredSize": new java.awt.Dimension( 225, 0 )
 					} )
-				}, new FormLayoutConstraints( class java.lang.String ) {
-					"value": "Center"
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
 				"value": "Center"
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 400, 300 )
+			"size": new java.awt.Dimension( 400, 335 )
 		} )
 	}
 }

@@ -104,7 +104,7 @@ new FormModel {
 				} )
 				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
 					name: "profit"
-					"text": "Прибуток"
+					"action": new FormReference( "openProfit" )
 				} )
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
 					name: "hSpacer1"
@@ -117,6 +117,16 @@ new FormModel {
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
 			"size": new java.awt.Dimension( 765, 880 )
+		} )
+		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
+			name: "openProfit"
+			"$action.Name": "Прибуток"
+			"$action.ActionCommandKey": "x"
+			auxiliary() {
+				"JavaCodeGenerator.className": "openProfitWindow"
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 896 )
 		} )
 	}
 }

@@ -22,6 +22,10 @@ public class ScheduleWindow extends JDialog {
         initComponents();
     }
 
+    public ScheduleWindow() {
+        initComponents();
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
@@ -58,6 +62,7 @@ public class ScheduleWindow extends JDialog {
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
+        setAlwaysOnTop(true);
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
@@ -65,4 +70,7 @@ public class ScheduleWindow extends JDialog {
     private JScrollPane scrollPane1;
     private JTable table1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
+    public void SHOW(){
+        this.setVisible(true);
+    }
 }

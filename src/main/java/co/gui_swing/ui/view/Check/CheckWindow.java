@@ -13,7 +13,7 @@ import org.jdesktop.layout.LayoutStyle;
 import sun.util.calendar.JulianCalendar;
 
 /**
- * @author Ivashenuik Yurii
+ * @author Ivasheniuk Yurii
  */
 public class CheckWindow extends JDialog {
 
@@ -29,7 +29,6 @@ public class CheckWindow extends JDialog {
 
     public CheckWindow() {
         initComponents();
-
     }
 
     private void initComponents() {
@@ -49,7 +48,7 @@ public class CheckWindow extends JDialog {
         emailLable = new JLabel();
         confirmBtn = new JButton();
         datePanel = new JPanel();
-        dateOrder = new JCalendarPanel();
+        dateOrder = new JSpinner();
 
         //======== this ========
         setTitle("\u0427\u0435\u043a");
@@ -58,7 +57,7 @@ public class CheckWindow extends JDialog {
 
         //======== panel1 ========
         {
-            panel1.setPreferredSize(new Dimension(330, 425));
+            panel1.setPreferredSize(new Dimension(360, 300));
             panel1.setOpaque(false);
             panel1.setMaximumSize(new Dimension(304, 395));
             panel1.setMinimumSize(new Dimension(294, 395));
@@ -93,6 +92,7 @@ public class CheckWindow extends JDialog {
 
             //---- customer ----
             customer.setFont(new Font("Tahoma", Font.ITALIC, 14));
+            customer.setOpaque(false);
 
             //---- label6 ----
             label6.setText("\u0414\u0430\u0442\u0430:");
@@ -120,8 +120,24 @@ public class CheckWindow extends JDialog {
 
             //======== datePanel ========
             {
-                datePanel.setLayout(new BorderLayout());
-                datePanel.add(dateOrder, BorderLayout.WEST);
+
+                //---- dateOrder ----
+                dateOrder.setModel(new SpinnerDateModel(new java.util.Date((System.currentTimeMillis()/60000)*60000), new java.util.Date((System.currentTimeMillis()/60000)*60000), new java.util.Date(1744019640000L), java.util.Calendar.DAY_OF_MONTH));
+
+                GroupLayout datePanelLayout = new GroupLayout(datePanel);
+                datePanel.setLayout(datePanelLayout);
+                datePanelLayout.setHorizontalGroup(
+                    datePanelLayout.createParallelGroup()
+                        .add(datePanelLayout.createSequentialGroup()
+                            .add(dateOrder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .add(0, 0, Short.MAX_VALUE))
+                );
+                datePanelLayout.setVerticalGroup(
+                    datePanelLayout.createParallelGroup()
+                        .add(datePanelLayout.createSequentialGroup()
+                            .add(dateOrder, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .add(0, 12, Short.MAX_VALUE))
+                );
             }
 
             GroupLayout panel1Layout = new GroupLayout(panel1);
@@ -140,25 +156,25 @@ public class CheckWindow extends JDialog {
                                     .add(label6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .add(18, 18, 18)
                                 .add(panel1Layout.createParallelGroup()
-                                    .add(workerLable, GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                                    .add(kingOfServiceLable, GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                    .add(workerLable, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(kingOfServiceLable, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .add(GroupLayout.TRAILING, panel1Layout.createSequentialGroup()
                                         .add(panel1Layout.createParallelGroup()
-                                            .add(customer, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
-                                            .add(datePanel, GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE))
+                                            .add(customer)
+                                            .add(datePanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addContainerGap())))
                             .add(panel1Layout.createSequentialGroup()
                                 .add(panel1Layout.createParallelGroup(GroupLayout.TRAILING, false)
                                     .add(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .add(label7, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .add(label7, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE))
                                 .add(18, 18, 18)
                                 .add(panel1Layout.createParallelGroup()
-                                    .add(priceLable, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                                    .add(emailLable, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)))))
-                    .add(GroupLayout.TRAILING, panel1Layout.createSequentialGroup()
-                        .addContainerGap(185, Short.MAX_VALUE)
-                        .add(confirmBtn)
-                        .addContainerGap())
+                                    .add(priceLable, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .add(emailLable, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .add(GroupLayout.TRAILING, panel1Layout.createSequentialGroup()
+                                .addPreferredGap(LayoutStyle.RELATED, 175, GroupLayout.PREFERRED_SIZE)
+                                .add(confirmBtn)
+                                .addContainerGap())))
             );
             panel1Layout.setVerticalGroup(
                 panel1Layout.createParallelGroup()
@@ -178,8 +194,8 @@ public class CheckWindow extends JDialog {
                         .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup()
                             .add(label6)
-                            .add(datePanel, GroupLayout.PREFERRED_SIZE, 190, GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(LayoutStyle.RELATED)
+                            .add(datePanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                        .add(18, 18, 18)
                         .add(panel1Layout.createParallelGroup(GroupLayout.TRAILING)
                             .add(label7)
                             .add(priceLable))
@@ -189,13 +205,14 @@ public class CheckWindow extends JDialog {
                             .add(emailLable))
                         .addPreferredGap(LayoutStyle.UNRELATED)
                         .add(confirmBtn, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(32, Short.MAX_VALUE))
             );
         }
         contentPane.add(panel1, BorderLayout.NORTH);
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
+        setAlwaysOnTop(true);
     }
 
     public void SHOW(){
@@ -217,6 +234,34 @@ public class CheckWindow extends JDialog {
     private JLabel emailLable;
     private JButton confirmBtn;
     private JPanel datePanel;
-    private JCalendarPanel dateOrder;
+    private JSpinner dateOrder;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
+    public JLabel getKingOfServiceLable() {
+        return kingOfServiceLable;
+    }
+
+    public JLabel getWorkerLable() {
+        return workerLable;
+    }
+
+    public JTextField getCustomer() {
+        return customer;
+    }
+
+    public JLabel getPriceLable() {
+        return priceLable;
+    }
+
+    public JLabel getEmailLable() {
+        return emailLable;
+    }
+
+    public JButton getConfirmBtn() {
+        return confirmBtn;
+    }
+
+    public JSpinner getDateOrder() {
+        return dateOrder;
+    }
+
 }

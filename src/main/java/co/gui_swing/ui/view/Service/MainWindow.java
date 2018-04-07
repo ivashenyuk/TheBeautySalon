@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.*;
 
-import co.gui_swing.ui.view.Check.CheckWindow;
+import co.gui_swing.ui.model.Data.DataUser;
 import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
@@ -19,9 +19,13 @@ import org.jdesktop.layout.LayoutStyle;
  */
 public class MainWindow extends JFrame {
 
+    public static int MAXHEIGHTWINDOW = 200;
+    public static DataUser dataUser = new DataUser();
+
     public MainWindow() {
         initComponents();
     }
+
 
     private void thisComponentResized(ComponentEvent e) {
         // TODO add your code here
@@ -30,6 +34,18 @@ public class MainWindow extends JFrame {
 
     public JPanel getWorkersPanel() {
         return workersPanel;
+    }
+
+    public JMenu getStatistic() {
+        return statistic;
+    }
+
+    public JMenu getSchedule() {
+        return schedule;
+    }
+
+    public JMenu getProfit() {
+        return profit;
     }
 
     private void initComponents() {
@@ -43,8 +59,6 @@ public class MainWindow extends JFrame {
         nameUser = new JLabel();
         scrollPaneWorkers = new JScrollPane();
         workersPanel = new JPanel();
-
-
 
         //======== this ========
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -71,6 +85,7 @@ public class MainWindow extends JFrame {
             //======== schedule ========
             {
                 schedule.setText("\u0420\u043e\u0431\u043e\u0447\u0438\u0439 \u0440\u043e\u0437\u043a\u043b\u0430\u0434");
+
             }
             menuBar1.add(schedule);
 
@@ -82,23 +97,23 @@ public class MainWindow extends JFrame {
             menuBar1.add(hSpacer1);
 
             //---- nameUser ----
-            nameUser.setText("Name User");
+            nameUser.setText(dataUser.nameUser);
             menuBar1.add(nameUser);
         }
         setJMenuBar(menuBar1);
 
         //======== scrollPaneWorkers ========
         {
-            scrollPaneWorkers.setMinimumSize(new Dimension(23, 9000));
+            scrollPaneWorkers.setMinimumSize(new Dimension(23, 250));
             scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
             scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-            scrollPaneWorkers.setPreferredSize(new Dimension(685, 9500));
+            scrollPaneWorkers.setPreferredSize(new Dimension(685, 300));
             scrollPaneWorkers.setAutoscrolls(true);
 
             //======== workersPanel ========
             {
-                workersPanel.setMinimumSize(new Dimension(100, 400));
-                workersPanel.setPreferredSize(new Dimension(666, 880));
+                workersPanel.setMinimumSize(new Dimension(100, 200));
+                workersPanel.setPreferredSize(new Dimension(666, MAXHEIGHTWINDOW));
                 workersPanel.setMaximumSize(new Dimension(2147483647, 2147483647));
                 workersPanel.setInheritsPopupMenu(true);
 
@@ -119,7 +134,8 @@ public class MainWindow extends JFrame {
             scrollPaneWorkers.setViewportView(workersPanel);
         }
         contentPane.add(scrollPaneWorkers, BorderLayout.CENTER);
-        setSize(765, 880);
+
+        setSize(765, 500);
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
@@ -134,7 +150,7 @@ public class MainWindow extends JFrame {
     private JLabel nameUser;
     private JScrollPane scrollPaneWorkers;
     private JPanel workersPanel;
-
+    // JFormDesigner - End of variables declaration  //GEN-END:variables
 
     public ArrayList<JPanel> getListWorkers() {
         return listWorkers;
@@ -144,18 +160,17 @@ public class MainWindow extends JFrame {
         return listBtnOrder;
     }
 
-    // JFormDesigner - End of variables declaration  //GEN-END:variables
     private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
     private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
 
     public void createWorkers(final Image img, String nameWorker, String price, String kingOfService) {
         JPanel workerPanel = new JPanel();
         JPanel borderPanel = new JPanel();
-        JPanel imgWorker = new JPanel(){
+        JPanel imgWorker = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(img, 0,0,200,200,this);
+                g.drawImage(img, 0, 0, 200, 200, this);
             }
         };
         JPanel informationWorker = new JPanel();
