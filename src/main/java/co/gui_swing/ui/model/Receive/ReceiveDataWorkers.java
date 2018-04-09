@@ -1,6 +1,7 @@
 package co.gui_swing.ui.model.Receive;
 
 import co.gui_swing.ui.model.Data.DataWorker;
+import co.gui_swing.ui.model.Setting;
 import co.gui_swing.ui.model.TCPConnection;
 import co.gui_swing.ui.model.TCPConnectionListener;
 
@@ -8,7 +9,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ReceiveDataWorkers implements TCPConnectionListener {
-    private final String ipConnection = "127.0.0.1";
     private ArrayList<DataWorker> dataWorkers = new ArrayList<DataWorker>();
 
     public ReceiveDataWorkers() {
@@ -16,7 +16,7 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
             @Override
             public void run() {
                 try {
-                    new TCPConnection(ReceiveDataWorkers.this, ipConnection, 1356);
+                    new TCPConnection(ReceiveDataWorkers.this, Setting.getIpConnection(), Setting.getPortConnection());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

@@ -1,0 +1,57 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Вхід"
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, par t {comp passwordField::::348:x, comp emailField::l:::x, seq t {comp forgotPassword:::p:97:p, space :p:27:p, comp registration:::p::p, space ::28:x, comp logInBtn:::p:142:p}, seq l {par l {comp label1:::p:73:p, comp label2:::p:73:p}, space :0:275:x}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:30:p, space :::p, comp emailField:::p:38:p, space :::p, comp label2:::p:30:p, space :::p, comp passwordField:::p:40:p, space ::167:x, par t {comp logInBtn:::p:43:p, par b {comp forgotPassword::b:p:22:p, comp registration::b:p::p}}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"minimumSize": new java.awt.Dimension( 368, 388 )
+				"maximumSize": new java.awt.Dimension( 368, 388 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Email:"
+					"font": &Font0 new java.awt.Font( "Tahoma", 0, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Пароль:"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "logInBtn"
+					"text": "Вхід"
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "forgotPassword"
+					"text": "Забули пароль?"
+					"cursor": #Cursor0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "registration"
+					"text": "Реєстрація"
+					"cursor": #Cursor0
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 370, 420 )
+		} )
+	}
+}

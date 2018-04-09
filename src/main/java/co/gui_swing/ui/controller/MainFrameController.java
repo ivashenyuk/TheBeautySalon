@@ -7,10 +7,11 @@ import co.gui_swing.ui.model.Receive.ReceiveDataWorkers;
 import co.gui_swing.ui.view.Service.MainWindow;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.ArrayList;
 
 public class MainFrameController {
@@ -22,6 +23,8 @@ public class MainFrameController {
     private JMenu schedule;
     private JMenu profit;
     private DataUser dataUser;
+    private JMenuItem changeAcount;
+    private JMenuItem exit;
     private ArrayList<DataWorker> dataWorkers = null;
 
 
@@ -58,6 +61,8 @@ public class MainFrameController {
         this.profit = this.mainWindow.getProfit();
         this.schedule = this.mainWindow.getSchedule();
         this.dataUser = new ReceiveDataUser().getDataUser();
+        this.changeAcount = this.mainWindow.getChangeAcount();
+        this.exit = this.mainWindow.getExit();
     }
 
     private void initListener() {
@@ -73,38 +78,30 @@ public class MainFrameController {
                 }
             });
         }
-
-        profit.addMenuListener(new MenuListener() {
-            public void menuSelected(MenuEvent e) {
+        profit.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
                 new ProfitController();
             }
-
-            public void menuDeselected(MenuEvent e) {
-
-            }
-
-            public void menuCanceled(MenuEvent e) {
-
-            }
         });
-        schedule.addMenuListener(new MenuListener() {
-            public void menuSelected(MenuEvent e) {
+        schedule.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
                 new ScheduleController();
             }
-
-            public void menuDeselected(MenuEvent e) {
-
+        });
+        exit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
             }
-
-            public void menuCanceled(MenuEvent e) {
-
+        });
+        changeAcount.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new LogInController().showLogInFrameController();
+                mainWindow.setVisible(false);
             }
         });
     }
-
-//    class MyAction implements ActionListener {
-//        public void actionPerformed(ActionEvent e) {
-//
-//        }
-//    }
 }

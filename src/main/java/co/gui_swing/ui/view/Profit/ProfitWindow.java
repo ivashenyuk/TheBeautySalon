@@ -73,6 +73,7 @@ public class ProfitWindow extends JDialog {
                     }
                 });
                 tableProfit.setPreferredSize(new Dimension(225, 0));
+                tableProfit.setEnabled(false);
                 scrollPane1.setViewportView(tableProfit);
             }
 
@@ -100,4 +101,7 @@ public class ProfitWindow extends JDialog {
     private JScrollPane scrollPane1;
     private JTable tableProfit;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
+    public JTable getTableProfit() {
+        return tableProfit;
+    }
 }

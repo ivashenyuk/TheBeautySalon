@@ -21,23 +21,15 @@ public class MainWindow extends JFrame {
 
     public static int MAXHEIGHTWINDOW = 200;
     public static DataUser dataUser = new DataUser();
+    private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
+    private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
 
     public MainWindow() {
         initComponents();
     }
 
-
-    private void thisComponentResized(ComponentEvent e) {
-        // TODO add your code here
-    }
-
-
     public JPanel getWorkersPanel() {
         return workersPanel;
-    }
-
-    public JMenu getStatistic() {
-        return statistic;
     }
 
     public JMenu getSchedule() {
@@ -48,93 +40,120 @@ public class MainWindow extends JFrame {
         return profit;
     }
 
+    public JMenuItem getExit() {
+        return exit;
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
         menuBar1 = new JMenuBar();
-        statistic = new JMenu();
+        file = new JMenu();
+        changeAcount = new JMenuItem();
+        exit = new JMenuItem();
         schedule = new JMenu();
         profit = new JMenu();
         hSpacer1 = new JPanel(null);
         nameUser = new JLabel();
         scrollPaneWorkers = new JScrollPane();
         workersPanel = new JPanel();
+        workerPanel = new JPanel();
+        borderPanel = new JPanel();
+        imgWorker = new JPanel();
+        informationWorker = new JPanel();
+        nameLabel = new JLabel();
+        label1 = new JLabel();
+        kingOfServiceLable = new JLabel();
+        label2 = new JLabel();
+        priceLabel = new JLabel();
+        orderBtn = new JButton();
+        openProfit = new openProfitWindow();
 
         //======== this ========
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("\u0421\u0430\u043b\u043e\u043d \u043a\u0440\u0430\u0441\u0438");
         setMinimumSize(new Dimension(850, 300));
-        addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                thisComponentResized(e);
-            }
-        });
         Container contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout(5, 5));
 
         //======== menuBar1 ========
         {
 
-            //======== statistic ========
+            //======== file ========
             {
-                statistic.setText("\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430");
+                file.setText("\u0424\u0430\u0439\u043b");
+
+                //---- changeAcount ----
+                changeAcount.setText("\u0417\u043c\u0456\u043d\u0438\u0442\u0438 \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430\u0430");
+                file.add(changeAcount);
+
+                //---- exit ----
+                exit.setText("\u0412\u0438\u0445\u0456\u0434");
+                file.add(exit);
             }
-            menuBar1.add(statistic);
+            menuBar1.add(file);
 
             //======== schedule ========
             {
                 schedule.setText("\u0420\u043e\u0431\u043e\u0447\u0438\u0439 \u0440\u043e\u0437\u043a\u043b\u0430\u0434");
-
             }
             menuBar1.add(schedule);
 
             //======== profit ========
             {
-                profit.setText("\u041f\u0440\u0438\u0431\u0443\u0442\u043e\u043a");
+                profit.setAction(openProfit);
             }
             menuBar1.add(profit);
             menuBar1.add(hSpacer1);
 
             //---- nameUser ----
-            nameUser.setText(dataUser.nameUser);
+            nameUser.setText("Name User");
             menuBar1.add(nameUser);
         }
         setJMenuBar(menuBar1);
 
         //======== scrollPaneWorkers ========
         {
-            scrollPaneWorkers.setMinimumSize(new Dimension(23, 250));
+            scrollPaneWorkers.setMinimumSize(new Dimension(23, 9000));
             scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
             scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-            scrollPaneWorkers.setPreferredSize(new Dimension(685, 300));
+            scrollPaneWorkers.setPreferredSize(new Dimension(685, 9500));
             scrollPaneWorkers.setAutoscrolls(true);
 
-            //======== workersPanel ========
+            //======== scrollPaneWorkers ========
             {
-                workersPanel.setMinimumSize(new Dimension(100, 200));
-                workersPanel.setPreferredSize(new Dimension(666, MAXHEIGHTWINDOW));
-                workersPanel.setMaximumSize(new Dimension(2147483647, 2147483647));
-                workersPanel.setInheritsPopupMenu(true);
+                scrollPaneWorkers.setMinimumSize(new Dimension(23, 250));
+                scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+                scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+                scrollPaneWorkers.setPreferredSize(new Dimension(685, 300));
+                scrollPaneWorkers.setAutoscrolls(true);
 
-                // JFormDesigner evaluation mark
-                workersPanel.setBorder(new javax.swing.border.CompoundBorder(
-                        new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                                "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                                javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                                java.awt.Color.red), workersPanel.getBorder()));
-                workersPanel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-                    public void propertyChange(java.beans.PropertyChangeEvent e) {
-                        if ("border".equals(e.getPropertyName())) throw new RuntimeException();
-                    }
-                });
-                workersPanel.setLayout(new BoxLayout(workersPanel, BoxLayout.Y_AXIS));
+                //======== workersPanel ========
+                {
+                    workersPanel.setMinimumSize(new Dimension(100, 200));
+                    workersPanel.setPreferredSize(new Dimension(666, MAXHEIGHTWINDOW));
+                    workersPanel.setMaximumSize(new Dimension(2147483647, 2147483647));
+                    workersPanel.setInheritsPopupMenu(true);
 
+                    // JFormDesigner evaluation mark
+                    workersPanel.setBorder(new javax.swing.border.CompoundBorder(
+                            new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                                    java.awt.Color.red), workersPanel.getBorder()));
+                    workersPanel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                        public void propertyChange(java.beans.PropertyChangeEvent e) {
+                            if ("border".equals(e.getPropertyName())) throw new RuntimeException();
+                        }
+                    });
+                    workersPanel.setLayout(new BoxLayout(workersPanel, BoxLayout.Y_AXIS));
+
+                }
+                scrollPaneWorkers.setViewportView(workersPanel);
             }
             scrollPaneWorkers.setViewportView(workersPanel);
         }
         contentPane.add(scrollPaneWorkers, BorderLayout.CENTER);
-
         setSize(765, 500);
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
@@ -143,25 +162,27 @@ public class MainWindow extends JFrame {
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
     private JMenuBar menuBar1;
-    private JMenu statistic;
+    private JMenu file;
+    private JMenuItem changeAcount;
+    private JMenuItem exit;
     private JMenu schedule;
     private JMenu profit;
     private JPanel hSpacer1;
     private JLabel nameUser;
     private JScrollPane scrollPaneWorkers;
     private JPanel workersPanel;
+    private JPanel workerPanel;
+    private JPanel borderPanel;
+    private JPanel imgWorker;
+    private JPanel informationWorker;
+    private JLabel nameLabel;
+    private JLabel label1;
+    private JLabel kingOfServiceLable;
+    private JLabel label2;
+    private JLabel priceLabel;
+    private JButton orderBtn;
+    private openProfitWindow openProfit;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
-
-    public ArrayList<JPanel> getListWorkers() {
-        return listWorkers;
-    }
-
-    public ArrayList<JButton> getListBtnOrder() {
-        return listBtnOrder;
-    }
-
-    private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
-    private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
 
     public void createWorkers(final Image img, String nameWorker, String price, String kingOfService) {
         JPanel workerPanel = new JPanel();
@@ -281,5 +302,32 @@ public class MainWindow extends JFrame {
         }
         listWorkers.add(workerPanel);
         listBtnOrder.add(orderBtn);
+    }
+
+    private class openProfitWindow extends AbstractAction {
+        private openProfitWindow() {
+            // JFormDesigner - Action initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+            // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
+            putValue(NAME, "\u041f\u0440\u0438\u0431\u0443\u0442\u043e\u043a");
+            putValue(ACTION_COMMAND_KEY, "x");
+            // JFormDesigner - End of action initialization  //GEN-END:initComponents
+        }
+
+        public void actionPerformed(ActionEvent e) {
+            // TODO add your code here
+        }
+    }
+
+    //-------------------------- Getters ------------------------------
+    public ArrayList<JPanel> getListWorkers() {
+        return listWorkers;
+    }
+
+    public ArrayList<JButton> getListBtnOrder() {
+        return listBtnOrder;
+    }
+
+    public JMenuItem getChangeAcount() {
+        return changeAcount;
     }
 }

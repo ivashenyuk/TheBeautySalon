@@ -4,7 +4,10 @@
 
 package co.gui_swing.ui.view.schedule;
 
+import co.gui_swing.ui.model.Data.DataScheduleLine;
+
 import java.awt.*;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.table.*;
 
@@ -12,6 +15,7 @@ import javax.swing.table.*;
  * @author Ivashenuik Yurii
  */
 public class ScheduleWindow extends JDialog {
+    private ArrayList<DataScheduleLine> listSchedule;
     public ScheduleWindow(Frame owner) {
         super(owner);
         initComponents();
@@ -72,5 +76,9 @@ public class ScheduleWindow extends JDialog {
     // JFormDesigner - End of variables declaration  //GEN-END:variables
     public void SHOW(){
         this.setVisible(true);
+    }
+
+    public JTable getTable1() {
+        return table1;
     }
 }

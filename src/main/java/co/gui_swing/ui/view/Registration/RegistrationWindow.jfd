@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Реєстрація"
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp emailField::l:::x, comp nameField:::::x, comp passwordField::l:::x, comp registrationBtn::l:::x, seq t {space :0:0:x, comp logInBtn:::p::p}, seq {par l {comp label2:::p::p, comp label3:::p::p, comp label1:::p::p, comp label4::l:p::p}, space :0:365:x}, comp passwordFieldAgain::l::488:x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, comp nameField:::p:33:p, space s:::p, comp label2:::p::p, space :::p, comp emailField:::p:33:p, space :p:26:p, comp label3:::p::p, space :::p, comp passwordField:::p:33:p, space :p:18:p, comp label4:::p::p, space :::p, comp passwordFieldAgain:::p:33:p, space :p:18:p, comp registrationBtn:::p:61:p, space s:::p, comp logInBtn:::p::p, space ::15:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Ім'я користувача"
+					"font": &Font0 new java.awt.Font( "Tahoma", 0, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameField"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Email"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Пароль"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Пароль ще раз"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordFieldAgain"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "registrationBtn"
+					"text": "Зареєструватись"
+					"font": new java.awt.Font( "Tahoma", 0, 18 )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "logInBtn"
+					"text": "Ввійти в існуючий акаунт"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+					"cursor": #Cursor0
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 510, 470 )
+		} )
+	}
+}

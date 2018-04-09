@@ -25,6 +25,7 @@ public class TCPConnection {
             public void run() {
                 try {
                     TCPConnection.this.eventListener.onConnectionReady(TCPConnection.this);
+                    // TODO: Send data
                     while (!rxThread.isInterrupted()) {
                         String data = in.readLine();
                         TCPConnection.this.eventListener.onReceive(TCPConnection.this, data);
