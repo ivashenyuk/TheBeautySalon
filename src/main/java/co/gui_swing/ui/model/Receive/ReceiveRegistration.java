@@ -4,6 +4,7 @@ import co.gui_swing.ui.model.Setting;
 import co.gui_swing.ui.model.TCPConnection;
 import co.gui_swing.ui.model.TCPConnectionListener;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class ReceiveRegistration implements TCPConnectionListener {
@@ -35,6 +36,12 @@ public class ReceiveRegistration implements TCPConnectionListener {
 
     @Override
     public synchronized void onReceive(TCPConnection tcpConnection, String user) {
+
+    }
+
+    @Override
+    public void onReceive(TCPConnection tcpConnection, String nameWorker, String kingOfServiceWorker,
+                          String priceWorker, int idButtonWorker, Image imgWorker) {
 
     }
 

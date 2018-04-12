@@ -1,6 +1,9 @@
 package co.gui_swing.ui.model.Data;
 
 import java.awt.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class DataWorker {
     private String nameWorker;
@@ -30,11 +33,11 @@ public class DataWorker {
     }
 
     public DataWorker() {
-        this.idButtonWorker = 1;
-        this.imgWorker = getImage("img.jpg");
-        this.kingOfServiceWorker = "Масаж";
-        this.nameWorker = "Івашенюк Юрій";
-        this.priceWorker = "100$";
+        this.idButtonWorker = -1;
+        this.imgWorker = null;
+        this.kingOfServiceWorker = "";
+        this.nameWorker = "";
+        this.priceWorker = "";
     }
 
     public DataWorker(String nameWorker, String kingOfServiceWorker, String priceWorker, int idButtonWorker, Image imgWorker) {

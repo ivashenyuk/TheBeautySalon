@@ -16,6 +16,8 @@ public class LogInController {
     private JTextField emailField;
     private JButton logInBtn;
     private JPasswordField passwordField;
+    private static String password;
+    private static String email;
 
     public LogInController() {
         initComponents();
@@ -29,6 +31,8 @@ public class LogInController {
         this.emailField = this.logInWindow.getEmailField();
         this.logInBtn = this.logInWindow.getLogInBtn();
         this.passwordField = this.logInWindow.getPasswordField();
+        //this.passwordField.setEchoChar('*');
+        this.passwordField.setText("1111");
     }
 
     public void showLogInFrameController() {
@@ -48,16 +52,15 @@ public class LogInController {
             public void mouseClicked(MouseEvent e) {
                 String passText = String.copyValueOf(passwordField.getPassword());
                 if (validateEmail(emailField.getText()) && !passText.equals("")) {
+                    password = passText;
+                    email = emailField.getText();
                     ReceiveLogIn receiveLogIn = new ReceiveLogIn(emailField.getText(), passText);
-                    if(receiveLogIn.CheckEmail())
+
+                    if (receiveLogIn.isAoutorisation()) {
                         emailField.setBackground(new Color(255, 255, 255));
-                    else {
-                        emailField.setBackground(new Color(255, 0, 0));
-                        return;
-                    }
-                    if(receiveLogIn.CheckPassword())
                         passwordField.setBackground(new Color(255, 255, 255));
-                    else{
+                    } else {
+                        emailField.setBackground(new Color(255, 0, 0));
                         passwordField.setBackground(new Color(255, 0, 0));
                         return;
                     }
@@ -66,7 +69,7 @@ public class LogInController {
                         emailField.setBackground(new Color(255, 0, 0));
                     else
                         emailField.setBackground(new Color(255, 255, 255));
-                    if(passText.equals(""))
+                    if (passText.equals(""))
                         passwordField.setBackground(new Color(255, 0, 0));
                     else
                         passwordField.setBackground(new Color(255, 255, 255));
@@ -81,5 +84,13 @@ public class LogInController {
     public static boolean validateEmail(String str) {
         Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
         return pattern.matcher(str).matches();
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public static String getEmail() {
+        return email;
     }
 }

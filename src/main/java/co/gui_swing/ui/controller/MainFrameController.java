@@ -6,12 +6,17 @@ import co.gui_swing.ui.model.Receive.ReceiveDataUser;
 import co.gui_swing.ui.model.Receive.ReceiveDataWorkers;
 import co.gui_swing.ui.view.Service.MainWindow;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
+import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainFrameController {
@@ -46,9 +51,16 @@ public class MainFrameController {
         mainWindow = new MainWindow();
         this.workersPanel = mainWindow.getWorkersPanel();
 
+
         for (int i = 0; i < dataWorkers.size(); i++) {
+//            BufferedImage img = null;
+//            try {
+//                img = ImageIO.read(new ByteArrayInputStream(dataWorkers.get(i).getImgWorker()));
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
             mainWindow.createWorkers(
-                    dataWorkers.get(i).getImgWorker(), dataWorkers.get(i).getNameWorker(),
+                    null , dataWorkers.get(i).getNameWorker(),
                     dataWorkers.get(i).getKingOfServiceWorker(), dataWorkers.get(i).getPriceWorker());
         }
 

@@ -7,6 +7,8 @@ import co.gui_swing.ui.view.Service.MainWindow;
 
 import javax.swing.*;
 
+import static jdk.nashorn.internal.objects.NativeString.trim;
+
 public class CheckController {
     private DataWorker dataWorker;
     private CheckWindow checkWindow;
@@ -40,7 +42,7 @@ public class CheckController {
         this.workerLable.setText(this.dataWorker.getNameWorker());
         this.priceLable.setText(this.dataWorker.getPriceWorker());
         this.emailLable.setText(this.dataUser.getEmailUser());
-        this.customer.setText(this.dataUser.getNameUser());
+        this.customer.setText(trim(this.dataUser.getNameUser()));
 
         this.checkWindow.SHOW();
     }

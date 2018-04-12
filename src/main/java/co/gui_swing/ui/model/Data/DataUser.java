@@ -1,24 +1,28 @@
 package co.gui_swing.ui.model.Data;
 
 public class DataUser {
-    public int idUser;
+    private int idUser;
     public String nameUser;
-    public String emailUser;
-    public String statusUser;
+    private String emailUser;
+    private String statusUser;
+    private String password;
 
     public DataUser() {
         this.idUser = -1;
         this.nameUser = "";
         this.emailUser = "";
         this.statusUser = "";
+        this.password = "";
     }
 
-    public DataUser(int idUser, String nameUser, String emailUser, String statusUser) {
+    public DataUser(int idUser, String nameUser, String emailUser, String statusUser, String password) {
         this.idUser = idUser;
         this.nameUser = nameUser;
         this.emailUser = emailUser;
         this.statusUser = statusUser;
+        this.password = password;
     }
+
     public int getIdUser() {
         return idUser;
     }
@@ -33,5 +37,9 @@ public class DataUser {
 
     public String getStatusUser() {
         return statusUser;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

@@ -20,7 +20,7 @@ import org.jdesktop.layout.LayoutStyle;
 public class MainWindow extends JFrame {
 
     public static int MAXHEIGHTWINDOW = 200;
-    public static DataUser dataUser = new DataUser();
+    public static DataUser dataUser;
     private ArrayList<JPanel> listWorkers = new ArrayList<JPanel>();
     private ArrayList<JButton> listBtnOrder = new ArrayList<JButton>();
 
@@ -103,22 +103,15 @@ public class MainWindow extends JFrame {
             {
                 profit.setAction(openProfit);
             }
+            if(dataUser.getStatusUser().equals("admin") || dataUser.getStatusUser().equals("administrator"))
             menuBar1.add(profit);
             menuBar1.add(hSpacer1);
 
             //---- nameUser ----
-            nameUser.setText("Name User");
+            nameUser.setText(dataUser.nameUser);
             menuBar1.add(nameUser);
         }
         setJMenuBar(menuBar1);
-
-        //======== scrollPaneWorkers ========
-        {
-            scrollPaneWorkers.setMinimumSize(new Dimension(23, 9000));
-            scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-            scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-            scrollPaneWorkers.setPreferredSize(new Dimension(685, 9500));
-            scrollPaneWorkers.setAutoscrolls(true);
 
             //======== scrollPaneWorkers ========
             {
@@ -152,7 +145,6 @@ public class MainWindow extends JFrame {
                 scrollPaneWorkers.setViewportView(workersPanel);
             }
             scrollPaneWorkers.setViewportView(workersPanel);
-        }
         contentPane.add(scrollPaneWorkers, BorderLayout.CENTER);
         setSize(765, 500);
         setLocationRelativeTo(getOwner());

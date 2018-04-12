@@ -5,6 +5,7 @@ import co.gui_swing.ui.model.Setting;
 import co.gui_swing.ui.model.TCPConnection;
 import co.gui_swing.ui.model.TCPConnectionListener;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -40,6 +41,12 @@ public class ReceiveDataProfit implements TCPConnectionListener {
 
     @Override
     public void onReceive(TCPConnection tcpConnection, String data) {
+
+    }
+
+    @Override
+    public void onReceive(TCPConnection tcpConnection, String nameWorker, String kingOfServiceWorker,
+                          String priceWorker, int idButtonWorker, Image imgWorker) {
 
     }
 

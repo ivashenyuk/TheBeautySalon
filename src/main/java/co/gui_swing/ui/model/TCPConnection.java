@@ -1,5 +1,6 @@
 package co.gui_swing.ui.model;
 
+import java.awt.*;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.Charset;
@@ -15,7 +16,7 @@ public class TCPConnection {
         this(eventListener, new Socket(ipAddress, port));
     }
 
-    public TCPConnection(TCPConnectionListener eventListener, Socket socket) throws IOException {
+    public TCPConnection(TCPConnectionListener eventListener, final Socket socket) throws IOException {
         this.socket = socket;
         this.eventListener = eventListener;
         this.in = new BufferedReader(new InputStreamReader(socket.getInputStream(), Charset.forName("UTF-8")));
@@ -27,8 +28,22 @@ public class TCPConnection {
                     TCPConnection.this.eventListener.onConnectionReady(TCPConnection.this);
                     // TODO: Send data
                     while (!rxThread.isInterrupted()) {
-                        String data = in.readLine();
-                        TCPConnection.this.eventListener.onReceive(TCPConnection.this, data);
+                        if(socket.getPort() == Setting.getPortGetWorkers()){
+                            String nameWorker = in.readLine();
+                            String kingOfServiceWorker = in.readLine();
+                            String priceWorker = in.readLine();
+                            int idButtonWorker = Integer.parseInt(in.readLine());
+                            String imgWorker  = in.readLine();
+
+                            TCPConnection.this.eventListener.onReceive(
+                                    TCPConnection.this, nameWorker,
+                                    kingOfServiceWorker, priceWorker, idButtonWorker,
+                                    null);
+                        }else {
+                            String data = in.readLine();
+                            TCPConnection.this.eventListener.onReceive(TCPConnection.this, data);
+                        }
+                        //Disconnect();
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -41,7 +56,7 @@ public class TCPConnection {
         rxThread.start();
     }
 
-    public synchronized void SendDataWorkers(String data) {
+    public synchronized void SendData(String data) {
         try {
             out.write(data + "\r\n");
             out.flush();

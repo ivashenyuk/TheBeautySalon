@@ -24,11 +24,7 @@ public class ProfitController {
             model.addRow(new Object[]{newLine.getName(), newLine.getProfitForSalon(), newLine.getSalary()});
         }
 
-
-
         this.tableProfit.setPreferredSize(new Dimension(225, model.getRowCount() * 16));
-
-
         this.profitWindow.SHOW();
     }
 }
