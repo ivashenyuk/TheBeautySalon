@@ -4,6 +4,7 @@ import co.gui_swing.ui.model.Data.DataUser;
 import co.gui_swing.ui.model.Data.DataWorker;
 import co.gui_swing.ui.model.Receive.ReceiveDataUser;
 import co.gui_swing.ui.model.Receive.ReceiveDataWorkers;
+import co.gui_swing.ui.model.Receive.ReceiveLogIn;
 import co.gui_swing.ui.view.Service.MainWindow;
 
 import javax.imageio.ImageIO;
@@ -34,7 +35,8 @@ public class MainFrameController {
 
 
     public MainFrameController() {
-        dataWorkers = new ReceiveDataWorkers().getDataWorkers();
+        ReceiveDataWorkers rec = new ReceiveDataWorkers();
+        dataWorkers = rec.getDataWorkers();
         this.dataUser = MainWindow.dataUser;
         this.dataUser = new ReceiveDataUser().getDataUser();
         MainWindow.dataUser = this.dataUser;
@@ -53,14 +55,8 @@ public class MainFrameController {
 
 
         for (int i = 0; i < dataWorkers.size(); i++) {
-//            BufferedImage img = null;
-//            try {
-//                img = ImageIO.read(new ByteArrayInputStream(dataWorkers.get(i).getImgWorker()));
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
             mainWindow.createWorkers(
-                    null , dataWorkers.get(i).getNameWorker(),
+                    dataWorkers.get(i).getImgWorker(), dataWorkers.get(i).getNameWorker(),
                     dataWorkers.get(i).getKingOfServiceWorker(), dataWorkers.get(i).getPriceWorker());
         }
 

@@ -11,14 +11,19 @@ import com.google.gson.Gson;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ReceiveDataWorkers implements TCPConnectionListener {
     private ArrayList<DataWorker> dataWorkers = new ArrayList<DataWorker>();
     private TCPConnection tcp = null;
     private TCPConnection tcp1 = null;
-
+    private static Thread threadClient;
+private static int time=4000;
     public ReceiveDataWorkers() {
-        Thread threadClient = new Thread(new Runnable() {
+        threadClient = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -30,8 +35,9 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
         });
         //threadClient.setDaemon(true);
         threadClient.start();
+
         try {
-            Thread.sleep(800);
+            Thread.sleep(time);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -47,15 +53,21 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
         tcpConnection.SendData("getworkers");
 
         try {
-            if (tcp1 == null)
-                tcp1 = new TCPConnection(ReceiveDataWorkers.this, Setting.getIpConnection(), Setting.getPortGetWorkers());
-            //String[] t = {LogInController.getEmail(), LogInController.getPassword()};
-            //tcp1.SendData(new Gson().toJson(t, String[].class));
-
-        } catch (IOException e) {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        tcp.Disconnect();
+        if (tcp1 == null) {
+            try {
+                tcp1 = new TCPConnection(ReceiveDataWorkers.this, Setting.getIpConnection(), Setting.getPortGetWorkers());
+                tcpConnection.Disconnect();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        //threadClient.interrupt();
     }
 
     @Override
@@ -64,8 +76,10 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
 
     @Override
     public synchronized void onReceive(TCPConnection tcpConnection, String nameWorker, String kingOfServiceWorker,
-                          String priceWorker, int idButtonWorker, Image imgWorker) {
+                                       String priceWorker, int idButtonWorker, String imgWorker) {
+        System.out.println(nameWorker);
         dataWorkers.add(new DataWorker(nameWorker, priceWorker, kingOfServiceWorker, idButtonWorker, imgWorker));
+        time+=1000;
     }
 
     @Override
@@ -76,6 +90,6 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
 
     @Override
     public synchronized void onExeption(TCPConnection tcpConnection, Exception ex) {
-        System.out.println("TCPConnection exeption: " + ex);
+        System.out.println("TCPConnection exeption: " + ex.toString());
     }
 }

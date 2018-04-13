@@ -34,11 +34,10 @@ public class TCPConnection {
                             String priceWorker = in.readLine();
                             int idButtonWorker = Integer.parseInt(in.readLine());
                             String imgWorker  = in.readLine();
-
                             TCPConnection.this.eventListener.onReceive(
                                     TCPConnection.this, nameWorker,
                                     kingOfServiceWorker, priceWorker, idButtonWorker,
-                                    null);
+                                    imgWorker);
                         }else {
                             String data = in.readLine();
                             TCPConnection.this.eventListener.onReceive(TCPConnection.this, data);

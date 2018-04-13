@@ -69,7 +69,7 @@ public class ReceiveLogIn implements TCPConnectionListener {
 
     @Override
     public void onReceive(TCPConnection tcpConnection, String nameWorker, String kingOfServiceWorker,
-                          String priceWorker, int idButtonWorker, Image imgWorker) {
+                          String priceWorker, int idButtonWorker, String imgWorker) {
 
     }
 
