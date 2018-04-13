@@ -1,5 +1,6 @@
 package co.gui_swing.ui.controller;
 
+import co.gui_swing.ui.model.Receive.ReceiveLogIn;
 import co.gui_swing.ui.model.Receive.ReceiveRegistration;
 import co.gui_swing.ui.view.Registration.RegistrationWindow;
 
@@ -77,6 +78,16 @@ public class RegistrationController {
                 ReceiveRegistration receiveRegistration =
                         new ReceiveRegistration(nameField.getText(), emailField.getText(),
                                 String.valueOf(passwordField.getPassword()));
+                if (!receiveRegistration.isOKorNO()) {
+                    emailField.setBackground(new Color(255, 0, 0));
+                    return;
+                }
+                emailField.setBackground(new Color(255, 255, 255));
+                ReceiveLogIn logIn = new ReceiveLogIn(emailField.getText(), String.valueOf(passwordField.getPassword()));
+                if(logIn.isAoutorisation()){
+                    new MainFrameController().showMainFrameController();
+                    registrationWindow.hide();
+                }
             }
         });
     }

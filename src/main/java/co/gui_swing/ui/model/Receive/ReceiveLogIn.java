@@ -18,6 +18,7 @@ public class ReceiveLogIn implements TCPConnectionListener {
     TCPConnection tcp;
     private boolean aoutorisation = false;
     static DataUser dataUser;
+
     public ReceiveLogIn(String email, String password) {
         this.email = email;
         this.password = password;
@@ -50,14 +51,13 @@ public class ReceiveLogIn implements TCPConnectionListener {
     public synchronized void onReceive(TCPConnection tcpConnection, String data) {
         if (data.equals("true")) {
             aoutorisation = true;
-        } else if(data.charAt(0) == '{'){
+        } else if (data.charAt(0) == '{') {
             dataUser = new Gson().fromJson(data, DataUser.class);
-        }
-        else {
+        } else {
             TCPConnection tcp1;
             try {
                 tcp1 = new TCPConnection(ReceiveLogIn.this, Setting.getIpConnection(), Setting.getPortLogin());
-                String[] t = {LogInController.getEmail(), LogInController.getPassword()};
+                String[] t = {ReceiveLogIn.this.email, ReceiveLogIn.this.password};
                 tcp1.SendData(new Gson().toJson(t, String[].class));
 
             } catch (IOException e) {
@@ -83,15 +83,12 @@ public class ReceiveLogIn implements TCPConnectionListener {
         System.out.println("TCPConnection exeption: " + ex);
     }
 
-    public Boolean CheckEmail() {
-        return email.equals(this.email);
-    }
-
-    public Boolean CheckPassword() {
-        return password.equals(this.password);
-    }
-
     public boolean isAoutorisation() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return aoutorisation;
     }
 

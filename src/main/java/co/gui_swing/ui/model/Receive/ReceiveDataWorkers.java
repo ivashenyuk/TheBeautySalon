@@ -21,7 +21,8 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
     private TCPConnection tcp = null;
     private TCPConnection tcp1 = null;
     private static Thread threadClient;
-private static int time=4000;
+    private static int time =13000;
+
     public ReceiveDataWorkers() {
         threadClient = new Thread(new Runnable() {
             @Override
@@ -53,7 +54,7 @@ private static int time=4000;
         tcpConnection.SendData("getworkers");
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(800);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -79,7 +80,7 @@ private static int time=4000;
                                        String priceWorker, int idButtonWorker, String imgWorker) {
         System.out.println(nameWorker);
         dataWorkers.add(new DataWorker(nameWorker, priceWorker, kingOfServiceWorker, idButtonWorker, imgWorker));
-        time+=1000;
+        //time += 1100;
     }
 
     @Override

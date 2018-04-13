@@ -3,32 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="78478715-12b7-4033-b91e-9e7af4ca75c5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Data/DataWorker.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Data/DataWorker.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataProfit.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataProfit.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.java" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg0.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.tmp/tmpImg9.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnection.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnectionListener.java" afterPath="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnectionListener.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$2.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$2.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$3.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$3.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$4.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$4.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$5.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController$5.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/MainFrameController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Data/DataWorker.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Data/DataWorker.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataProfit$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataProfit$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataProfit.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataProfit.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController$2.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController$2.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/controller/RegistrationController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataWorkers$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataWorkers$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveLogIn.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveLogIn.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveRegistration$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveRegistration$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveRegistration.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/Receive/ReceiveRegistration.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnection$1.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnection$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnection.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnection.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnectionListener.class" afterPath="$PROJECT_DIR$/target/classes/co/gui_swing/ui/model/TCPConnectionListener.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,17 +42,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReceiveDataWorkers.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.java">
+      <file leaf-file-name="ReceiveRegistration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="1180">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="71" selection-end-column="9" />
               <folding>
-                <element signature="e#720#732#0" expanded="true" />
-                <element signature="e#951#1294#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1835#1836#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1580">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding>
+                <element signature="e#4102#4103#0" expanded="true" />
+                <element signature="e#4148#4149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReceiveLogIn.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="59" column="81" lean-forward="false" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+              <folding>
+                <element signature="e#763#1100#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Service/MainWindow.jfd" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Registration/RegistrationWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Registration/RegistrationWindow.jfd" />
-        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/ProfitController.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Log_in/LogInWindow.jfd" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/LogInController.java" />
@@ -130,14 +149,15 @@
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/CheckController.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Setting.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnectionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataProfit.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Data/DataWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java" />
       </list>
     </option>
   </component>
@@ -191,18 +211,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ForTheBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name=".tmp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForTheBeautySalon" type="b2602c69:ProjectViewProjectNode" />
@@ -328,9 +342,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,12 +632,18 @@
       <workItem from="1523611120025" duration="1715000" />
       <workItem from="1523612871177" duration="1794000" />
       <workItem from="1523614691155" duration="1790000" />
-      <workItem from="1523616509162" duration="1161000" />
+      <workItem from="1523616509162" duration="1451000" />
+      <workItem from="1523632607376" duration="1773000" />
+      <workItem from="1523634407680" duration="1578000" />
+      <workItem from="1523636217325" duration="2140000" />
+      <workItem from="1523639916428" duration="1789000" />
+      <workItem from="1523641727608" duration="1791000" />
+      <workItem from="1523643547370" duration="1017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192589000" />
+    <option name="totallyTimeSpent" value="202967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,6 +656,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19329074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1032" y="230" width="136" height="582" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -649,7 +671,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44408944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21086262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -858,13 +880,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="78" column="75" lean-forward="false" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/view/Log_in/LogInWindow.jfd">
       <provider selected="true" editor-type-id="JFormDesigner">
         <state paletteWidth="0" propertiesWidth="0" structureHeight="0" />
@@ -882,13 +897,6 @@
         <state relative-caret-position="360">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/LogInController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -942,30 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="43" column="72" lean-forward="false" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -994,32 +978,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/MainFrameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="20">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataWorkers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="109">
+          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
-            <element signature="e#720#732#0" expanded="true" />
-            <element signature="e#951#1294#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
+            <marker date="1523635374449" expanded="true" signature="1790:1912" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/LogInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="78" column="35" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="78" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveDataUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/TCPConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1580">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="e#4102#4103#0" expanded="true" />
+            <element signature="e#4148#4149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/gui_swing/ui/model/Receive/ReceiveLogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="59" column="81" lean-forward="false" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+          <folding>
+            <element signature="e#763#1100#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
           </folding>
         </state>
       </provider>
