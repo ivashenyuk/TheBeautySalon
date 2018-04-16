@@ -85,7 +85,7 @@ public class RegistrationController {
                 emailField.setBackground(new Color(255, 255, 255));
                 ReceiveLogIn logIn = new ReceiveLogIn(emailField.getText(), String.valueOf(passwordField.getPassword()));
                 if(logIn.isAoutorisation()){
-                    new MainFrameController().showMainFrameController();
+                    new SecretCode(receiveRegistration.getSecretCode());
                     registrationWindow.hide();
                 }
             }

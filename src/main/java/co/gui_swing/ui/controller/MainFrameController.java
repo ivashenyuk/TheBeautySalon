@@ -6,6 +6,7 @@ import co.gui_swing.ui.model.Receive.ReceiveDataUser;
 import co.gui_swing.ui.model.Receive.ReceiveDataWorkers;
 import co.gui_swing.ui.model.Receive.ReceiveLogIn;
 import co.gui_swing.ui.view.Service.MainWindow;
+import com.google.gson.Gson;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -28,6 +29,7 @@ public class MainFrameController {
     private JMenu statistic;
     private JMenu schedule;
     private JMenu profit;
+    private JMenu orders;
     private DataUser dataUser;
     private JMenuItem changeAcount;
     private JMenuItem exit;
@@ -67,6 +69,7 @@ public class MainFrameController {
             workersPanel.add(worker);
         }
         this.profit = this.mainWindow.getProfit();
+        this.orders = this.mainWindow.getOrders();
         this.schedule = this.mainWindow.getSchedule();
         this.dataUser = new ReceiveDataUser().getDataUser();
         this.changeAcount = this.mainWindow.getChangeAcount();
@@ -76,13 +79,11 @@ public class MainFrameController {
     private void initListener() {
         int i = 0;
         for (final JButton orderBtn : listBtnOrder) {
-            orderBtn.putClientProperty("id", i);
             i++;
-
             final int finalI = i;
             orderBtn.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    new CheckController((Integer) orderBtn.getClientProperty("id"), dataWorkers.get(finalI));
+                    new CheckController(finalI, dataWorkers.get(finalI-1));
                 }
             });
         }
@@ -109,6 +110,12 @@ public class MainFrameController {
             public void actionPerformed(ActionEvent e) {
                 new LogInController().showLogInFrameController();
                 mainWindow.setVisible(false);
+            }
+        });
+        orders.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                new OrdersController();
             }
         });
     }

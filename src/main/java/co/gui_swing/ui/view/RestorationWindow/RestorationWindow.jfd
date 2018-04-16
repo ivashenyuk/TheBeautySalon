@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Заповніть дані для відновлення доступу"
+			"defaultCloseOperation": 3
+			"alwaysOnTop": true
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp label1:::p:79:p, space :::p, comp emailField::::310:x}, seq {comp label2:::p::p, space :::p, comp SecretCodeField::::256:x}, seq t {space :0:285:x, comp nextBtn:::p:108:p}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p:24:p, comp emailField::b:p::p}, space s:::p, par b {comp label2::b:p:25:p, comp SecretCodeField::b:p::p}, space s:::p, comp nextBtn:::p:32:p, space ::15:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Ваш email: "
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Ваш секретний код: "
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "SecretCodeField"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "nextBtn"
+					"text": "Далі"
+					"font": new java.awt.Font( "Tahoma", 0, 14 )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 175 )
+		} )
+	}
+}

@@ -28,22 +28,6 @@ public class MainWindow extends JFrame {
         initComponents();
     }
 
-    public JPanel getWorkersPanel() {
-        return workersPanel;
-    }
-
-    public JMenu getSchedule() {
-        return schedule;
-    }
-
-    public JMenu getProfit() {
-        return profit;
-    }
-
-    public JMenuItem getExit() {
-        return exit;
-    }
-
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
@@ -53,6 +37,7 @@ public class MainWindow extends JFrame {
         exit = new JMenuItem();
         schedule = new JMenu();
         profit = new JMenu();
+        orders = new JMenu();
         hSpacer1 = new JPanel(null);
         nameUser = new JLabel();
         scrollPaneWorkers = new JScrollPane();
@@ -68,6 +53,7 @@ public class MainWindow extends JFrame {
         priceLabel = new JLabel();
         orderBtn = new JButton();
         openProfit = new openProfitWindow();
+        openOrders = new openOrdersWindow();
 
         //======== this ========
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -84,7 +70,7 @@ public class MainWindow extends JFrame {
                 file.setText("\u0424\u0430\u0439\u043b");
 
                 //---- changeAcount ----
-                changeAcount.setText("\u0417\u043c\u0456\u043d\u0438\u0442\u0438 \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430\u0430");
+                changeAcount.setText("\u0417\u043c\u0456\u043d\u0438\u0442\u0438 \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430");
                 file.add(changeAcount);
 
                 //---- exit ----
@@ -103,8 +89,14 @@ public class MainWindow extends JFrame {
             {
                 profit.setAction(openProfit);
             }
-            if(dataUser.getStatusUser().equals("admin") || dataUser.getStatusUser().equals("administrator"))
-            menuBar1.add(profit);
+            //======== orders ========
+            {
+                orders.setAction(openOrders);
+            }
+            if (dataUser.getStatusUser().equals("admin") || dataUser.getStatusUser().equals("administrator")) {
+                menuBar1.add(profit);
+                menuBar1.add(orders);
+            }
             menuBar1.add(hSpacer1);
 
             //---- nameUser ----
@@ -113,38 +105,38 @@ public class MainWindow extends JFrame {
         }
         setJMenuBar(menuBar1);
 
-            //======== scrollPaneWorkers ========
+        //======== scrollPaneWorkers ========
+        {
+            scrollPaneWorkers.setMinimumSize(new Dimension(23, 250));
+            scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+            scrollPaneWorkers.setPreferredSize(new Dimension(685, 300));
+            scrollPaneWorkers.setAutoscrolls(true);
+
+            //======== workersPanel ========
             {
-                scrollPaneWorkers.setMinimumSize(new Dimension(23, 250));
-                scrollPaneWorkers.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-                scrollPaneWorkers.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-                scrollPaneWorkers.setPreferredSize(new Dimension(685, 300));
-                scrollPaneWorkers.setAutoscrolls(true);
+                workersPanel.setMinimumSize(new Dimension(100, 200));
+                workersPanel.setPreferredSize(new Dimension(666, MAXHEIGHTWINDOW));
+                workersPanel.setMaximumSize(new Dimension(2147483647, 2147483647));
+                workersPanel.setInheritsPopupMenu(true);
 
-                //======== workersPanel ========
-                {
-                    workersPanel.setMinimumSize(new Dimension(100, 200));
-                    workersPanel.setPreferredSize(new Dimension(666, MAXHEIGHTWINDOW));
-                    workersPanel.setMaximumSize(new Dimension(2147483647, 2147483647));
-                    workersPanel.setInheritsPopupMenu(true);
+                // JFormDesigner evaluation mark
+                workersPanel.setBorder(new javax.swing.border.CompoundBorder(
+                        new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                                "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                                javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                                java.awt.Color.red), workersPanel.getBorder()));
+                workersPanel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                    public void propertyChange(java.beans.PropertyChangeEvent e) {
+                        if ("border".equals(e.getPropertyName())) throw new RuntimeException();
+                    }
+                });
+                workersPanel.setLayout(new BoxLayout(workersPanel, BoxLayout.Y_AXIS));
 
-                    // JFormDesigner evaluation mark
-                    workersPanel.setBorder(new javax.swing.border.CompoundBorder(
-                            new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                                    "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                                    javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                                    java.awt.Color.red), workersPanel.getBorder()));
-                    workersPanel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-                        public void propertyChange(java.beans.PropertyChangeEvent e) {
-                            if ("border".equals(e.getPropertyName())) throw new RuntimeException();
-                        }
-                    });
-                    workersPanel.setLayout(new BoxLayout(workersPanel, BoxLayout.Y_AXIS));
-
-                }
-                scrollPaneWorkers.setViewportView(workersPanel);
             }
             scrollPaneWorkers.setViewportView(workersPanel);
+        }
+        scrollPaneWorkers.setViewportView(workersPanel);
         contentPane.add(scrollPaneWorkers, BorderLayout.CENTER);
         setSize(765, 500);
         setLocationRelativeTo(getOwner());
@@ -159,6 +151,7 @@ public class MainWindow extends JFrame {
     private JMenuItem exit;
     private JMenu schedule;
     private JMenu profit;
+    private JMenu orders;
     private JPanel hSpacer1;
     private JLabel nameUser;
     private JScrollPane scrollPaneWorkers;
@@ -174,6 +167,7 @@ public class MainWindow extends JFrame {
     private JLabel priceLabel;
     private JButton orderBtn;
     private openProfitWindow openProfit;
+    private openOrdersWindow openOrders;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
     public void createWorkers(final Image img, String nameWorker, String price, String kingOfService) {
@@ -309,17 +303,43 @@ public class MainWindow extends JFrame {
             // TODO add your code here
         }
     }
+    private class openOrdersWindow extends AbstractAction {
+        private openOrdersWindow() {
+            // JFormDesigner - Action initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+            // Generated using JFormDesigner Evaluation license - Ivashenuik Yurii
+            putValue(NAME, "Замовлення");
+            putValue(ACTION_COMMAND_KEY, "o");
+            // JFormDesigner - End of action initialization  //GEN-END:initComponents
+        }
+
+        public void actionPerformed(ActionEvent e) {
+            // TODO add your code here
+        }
+    }
 
     //-------------------------- Getters ------------------------------
     public ArrayList<JPanel> getListWorkers() {
         return listWorkers;
     }
-
     public ArrayList<JButton> getListBtnOrder() {
         return listBtnOrder;
     }
-
     public JMenuItem getChangeAcount() {
         return changeAcount;
+    }
+    public JPanel getWorkersPanel() {
+        return workersPanel;
+    }
+    public JMenu getSchedule() {
+        return schedule;
+    }
+    public JMenu getProfit() {
+        return profit;
+    }
+    public JMenuItem getExit() {
+        return exit;
+    }
+    public JMenu getOrders() {
+        return orders;
     }
 }

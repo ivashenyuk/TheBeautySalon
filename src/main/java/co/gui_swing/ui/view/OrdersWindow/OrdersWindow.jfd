@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Замовлення"
+			"resizable": false
+			"alwaysOnTop": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+				"minimumSize": new java.awt.Dimension( 988, 343 )
+				"maximumSize": new java.awt.Dimension( 988, 343 )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "ordersTable"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+							add( "№" )
+							add( "Замовник" )
+							add( "Вид послуг" )
+							add( "Ціна" )
+							add( "Email" )
+							add( "Дата" )
+							add( "Виконавець" )
+							add( "Знижка" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 45, 50, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 200, 200, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 150, 150, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 90, 90, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 170, 170, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 120, 120, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 150, 150, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 60, 60, true ) )
+						} )
+						"enabled": false
+						"preferredScrollableViewportSize": new java.awt.Dimension( 990, 400 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 990, 375 )
+		} )
+	}
+}

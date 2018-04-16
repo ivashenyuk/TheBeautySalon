@@ -6,6 +6,7 @@ public class DataUser {
     private String emailUser;
     private String statusUser;
     private String password;
+    private String secretCode;
 
     public DataUser() {
         this.idUser = -1;
@@ -13,14 +14,16 @@ public class DataUser {
         this.emailUser = "";
         this.statusUser = "";
         this.password = "";
+        this.secretCode = "";
     }
 
-    public DataUser(int idUser, String nameUser, String emailUser, String statusUser, String password) {
+    public DataUser(int idUser, String nameUser, String emailUser, String statusUser, String password, String secretCode) {
         this.idUser = idUser;
         this.nameUser = nameUser;
         this.emailUser = emailUser;
         this.statusUser = statusUser;
         this.password = password;
+        this.secretCode = secretCode;
     }
 
     public int getIdUser() {
@@ -41,5 +44,9 @@ public class DataUser {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getSecretCode() {
+        return secretCode;
     }
 }

@@ -79,6 +79,13 @@ public class LogInController {
                 logInWindow.hide();
             }
         });
+        this.forgotPassword.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                new RestorationController();
+                logInWindow.hide();
+            }
+        });
     }
 
     public static boolean validateEmail(String str) {
