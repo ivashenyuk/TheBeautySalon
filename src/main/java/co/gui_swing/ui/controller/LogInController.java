@@ -31,8 +31,6 @@ public class LogInController {
         this.emailField = this.logInWindow.getEmailField();
         this.logInBtn = this.logInWindow.getLogInBtn();
         this.passwordField = this.logInWindow.getPasswordField();
-        //this.passwordField.setEchoChar('*');
-        this.passwordField.setText("1111");
     }
 
     public void showLogInFrameController() {

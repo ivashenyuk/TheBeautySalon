@@ -22,7 +22,6 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
 					name: "emailField"
-					"text": "yura.ivash@gmail.com"
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label2"

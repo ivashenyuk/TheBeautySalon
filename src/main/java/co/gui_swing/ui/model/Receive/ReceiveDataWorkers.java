@@ -21,7 +21,7 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
     private TCPConnection tcp = null;
     private TCPConnection tcp1 = null;
     private static Thread threadClient;
-    private static int time =13000;
+    private static int time = 13000;
 
     public ReceiveDataWorkers() {
         threadClient = new Thread(new Runnable() {
@@ -78,7 +78,6 @@ public class ReceiveDataWorkers implements TCPConnectionListener {
     @Override
     public synchronized void onReceive(TCPConnection tcpConnection, String nameWorker, String kingOfServiceWorker,
                                        String priceWorker, int idButtonWorker, String imgWorker) {
-        System.out.println(nameWorker);
         dataWorkers.add(new DataWorker(nameWorker, priceWorker, kingOfServiceWorker, idButtonWorker, imgWorker));
         //time += 1100;
     }

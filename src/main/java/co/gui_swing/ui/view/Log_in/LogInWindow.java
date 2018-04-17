@@ -52,9 +52,6 @@ public class LogInWindow extends JFrame {
             label1.setText("Email:");
             label1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 
-            //---- emailField ----
-            emailField.setText("yura.ivash@gmail.com");
-
             //---- label2 ----
             label2.setText("\u041f\u0430\u0440\u043e\u043b\u044c:");
             label2.setFont(new Font("Tahoma", Font.PLAIN, 16));

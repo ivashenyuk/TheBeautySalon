@@ -11,6 +11,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static jdk.nashorn.internal.objects.NativeString.trim;
 
@@ -61,8 +63,16 @@ public class CheckController {
         this.confirmBtn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                SimpleDateFormat formater = new SimpleDateFormat("dd.mm.YYYY HH:MM:ss");
+                Object value = CheckController.this.dateOrder.getValue();
+                String time="";
+                if (value instanceof Date) {
+                    Date date = (Date)value;
+                    SimpleDateFormat format = new SimpleDateFormat("dd.mm.YYYY HH:MM:ss");
+                    time = format.format(date);
+                }
                 ReceiveCheck receiveCheck = new ReceiveCheck(CheckController.this.kingOfServiceLable.getText(), CheckController.this.workerLable.getText(),
-                        CheckController.this.customer.getText(), CheckController.this.dateOrder.getValue().toString(), CheckController.this.priceLable.getText(),
+                        CheckController.this.customer.getText(), time, CheckController.this.priceLable.getText(),
                         CheckController.this.emailLable.getText());
 
                 if (!receiveCheck.isOKorNO()) {

@@ -11,7 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://D:/tinylaf-1_4_0/tinycp.jar!/" />
@@ -22,7 +22,7 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="JGoodies Forms" level="project" />
     <orderEntry type="library" exported="" name="GroupLayout" level="project" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/jcalendar-0.8.1.jar!/" />
@@ -31,6 +31,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="TableLayout" level="project" />
+    <orderEntry type="library" exported="" name="TableLayout" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.8.2" level="application" />
   </component>
 </module>
