@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="2572.503921340596" y="2016.5">co.gui_swing.ui.model.Receive.ReceiveDataWorkers</node>
+    <node x="3929.6572282189036" y="2903.0">co.gui_swing.ui.view.RestorationWindow.RestorationWindow</node>
+    <node x="3120.660714285714" y="1432.0">co.gui_swing.ui.model.Receive.ReceiveDataSchedule</node>
+    <node x="233.0" y="1432.0">co.gui_swing.ui.model.Receive.ReceiveDataOrders</node>
+    <node x="2451.375" y="1421.0">co.gui_swing.ui.model.Data.DataWorker</node>
+    <node x="4463.449467339431" y="2534.5">co.gui_swing.ui.view.secretCode.SecretCodeWindow</node>
+    <node x="3819.589285714286" y="3237.0">co.gui_swing.ui.controller.RestorationController</node>
+    <node x="2358.375" y="2116.5">co.gui_swing.ui.model.Receive.ReceiveDataUser</node>
+    <node x="840.0" y="1201.0">co.gui_swing.ui.view.Service.MainWindow</node>
+    <node x="1836.59375" y="2903.0">co.gui_swing.ui.view.RestorationWindow.NewPasswordWindow</node>
+    <node x="1924.5" y="1984.0">co.gui_swing.ui.controller.CheckController</node>
+    <node x="0.0" y="729.5">co.gui_swing.ui.model.Data.DataOrderLine</node>
+    <node x="2035.375" y="1377.0">co.gui_swing.ui.model.Receive.ReceiveCheck</node>
+    <node x="4377.449467339431" y="2937.0">co.gui_swing.ui.controller.SecretCode</node>
+    <node x="3820.660714285714" y="1388.0">co.gui_swing.ui.model.Receive.ReceiveLogIn</node>
+    <node x="4224.660714285714" y="1388.0">co.gui_swing.ui.model.Receive.ReceiveChangePassword</node>
+    <node x="4658.449467339431" y="2848.0">co.gui_swing.ui.view.Registration.RegistrationWindow</node>
+    <node x="1838.71875" y="2414.0">co.gui_swing.ui.controller.MainFrameController</node>
+    <node x="4593.160714285714" y="3237.0">co.gui_swing.ui.controller.RegistrationController</node>
+    <node x="1246.0" y="2094.5">co.gui_swing.ui.controller.ProfitController</node>
+    <node x="3457.160714285714" y="2094.5">co.gui_swing.ui.controller.ScheduleController</node>
+    <node x="4174.446428571428" y="4023.0">co.gui_swing.Runner</node>
+    <node x="4138.946428571428" y="3611.0">co.gui_swing.ui.controller.LogInController</node>
+    <node x="4876.160714285714" y="3247.5">co.gui_swing.ui.view.Log_in.LogInWindow</node>
+    <node x="3449.660714285714" y="784.5">co.gui_swing.ui.model.Data.DataScheduleLine</node>
+    <node x="2940.195499085463" y="209.5">co.gui_swing.ui.model.TCPConnectionListener</node>
+    <node x="663.6717171717173" y="817.5">co.gui_swing.ui.view.Service.MainWindow.openOrdersWindow</node>
+    <node x="1420.375" y="1432.0">co.gui_swing.ui.model.Receive.ReceiveDataProfit</node>
+    <node x="2768.6607142857147" y="729.0">co.gui_swing.ui.model.TCPConnection</node>
+    <node x="1304.75" y="784.5">co.gui_swing.ui.model.Data.DataProfitLine</node>
+    <node x="954.1666666666665" y="817.5">co.gui_swing.ui.view.Service.MainWindow.openProfitWindow</node>
+    <node x="3525.660714285714" y="1443.0">co.gui_swing.ui.view.schedule.ScheduleWindow</node>
+    <node x="637.0" y="1454.0">co.gui_swing.ui.view.OrdersWindow.OrdersWindow</node>
+    <node x="2726.195499085463" y="0.0">co.gui_swing.ui.model.Setting</node>
+    <node x="1836.375" y="1311.0">co.gui_swing.ui.view.Check.CheckWindow</node>
+    <node x="1168.0" y="1443.0">co.gui_swing.ui.view.Profit.ProfitWindow</node>
+    <node x="4730.948365785041" y="1399.0">co.gui_swing.ui.model.Receive.ReceiveRegistration</node>
+    <node x="276.59273515227414" y="2083.0">co.gui_swing.ui.controller.OrdersController</node>
+    <node x="2124.3204137237026" y="751.5">co.gui_swing.ui.model.Data.DataUser</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="co.gui_swing.ui.controller.ScheduleController" target="co.gui_swing.ui.model.Data.DataScheduleLine">
+      <point x="109.59999999999991" y="-59.5" />
+      <point x="3703.760714285714" y="1954.0" />
+      <point x="3810.160714285714" y="1954.0" />
+      <point x="3810.160714285714" y="1181.0" />
+      <point x="3709.9940476190477" y="1181.0" />
+      <point x="118.33333333333326" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.LogInController" target="co.gui_swing.ui.model.Receive.ReceiveLogIn">
+      <point x="0.0" y="-181.0" />
+      <point x="4254.446428571428" y="3541.0" />
+      <point x="4335.806610196574" y="3541.0" />
+      <point x="4335.806610196574" y="1934.0" />
+      <point x="4067.5178571428573" y="1934.0" />
+      <point x="54.857142857143" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.ProfitController" target="co.gui_swing.ui.model.Data.DataProfitLine">
+      <point x="-20.0" y="-59.5" />
+      <point x="1346.0" y="1964.0" />
+      <point x="1360.5" y="1964.0" />
+      <point x="1360.5" y="1071.0" />
+      <point x="1327.0" y="1071.0" />
+      <point x="-111.25" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.model.Receive.ReceiveChangePassword">
+      <point x="94.33333333333337" y="-137.0" />
+      <point x="4055.4226190476193" y="3207.0" />
+      <point x="4192.745499085463" y="3207.0" />
+      <point x="4192.745499085463" y="1954.0" />
+      <point x="4320.660714285714" y="1954.0" />
+      <point x="-96.0" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RegistrationController" target="co.gui_swing.ui.controller.SecretCode">
+      <point x="-37.57142857142844" y="-137.0" />
+      <point x="4687.089285714286" y="3197.0" />
+      <point x="4507.949467339431" y="3197.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataOrders" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="72.0" y="-115.5" />
+      <point x="497.0" y="1111.0" />
+      <point x="2776.2797619047624" y="1111.0" />
+      <point x="-152.3809523809523" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.controller.ProfitController">
+      <point x="-31.625" y="-192.0" />
+      <point x="1933.59375" y="2354.0" />
+      <point x="1366.0" y="2354.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.LogInController" target="co.gui_swing.ui.controller.RestorationController">
+      <point x="-63.0" y="-181.0" />
+      <point x="4191.446428571428" y="3571.0" />
+      <point x="3890.339285714286" y="3571.0" />
+      <point x="-70.75" y="137.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveCheck" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="-48.0" y="-170.5" />
+      <point x="2179.375" y="1061.0" />
+      <point x="2015.7177351522741" y="1061.0" />
+      <point x="2015.7177351522741" y="669.0" />
+      <point x="3027.4682263581903" y="669.0" />
+      <point x="-104.72727272727275" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.Service.MainWindow.openProfitWindow" target="co.gui_swing.ui.view.Service.MainWindow">
+      <point x="79.66666666666652" y="37.5" />
+      <point x="1153.333333333333" y="1071.0" />
+      <point x="1082.0" y="1071.0" />
+      <point x="88.0" y="-346.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataUser" target="co.gui_swing.ui.model.Data.DataUser">
+      <point x="-55.0" y="-37.5" />
+      <point x="2385.875" y="1934.0" />
+      <point x="2429.875" y="1934.0" />
+      <point x="2429.875" y="1101.0" />
+      <point x="2281.3204137237026" y="1101.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.model.Receive.ReceiveDataWorkers">
+      <point x="73.79166666666652" y="-192.0" />
+      <point x="2039.0104166666665" y="2374.0" />
+      <point x="2668.503921340596" y="2374.0" />
+      <point x="-96.0" y="137.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataWorkers" target="co.gui_swing.ui.model.Setting">
+      <point x="2.2737367544323206E-13" y="-137.5" />
+      <point x="2764.503921340596" y="1954.0" />
+      <point x="2758.1607142857147" y="1954.0" />
+      <point x="2758.1607142857147" y="639.0" />
+      <point x="2801.639943529907" y="639.0" />
+      <point x="-21.555555555555657" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.Service.MainWindow" target="co.gui_swing.ui.model.Data.DataUser">
+      <point x="132.0" y="-346.5" />
+      <point x="1126.0" y="1081.0" />
+      <point x="2146.748985152274" y="1081.0" />
+      <point x="-134.57142857142844" y="103.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataWorkers" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="170.66666666666674" y="-137.5" />
+      <point x="2935.1705880072627" y="1954.0" />
+      <point x="3110.160714285714" y="1954.0" />
+      <point x="3110.160714285714" y="709.0" />
+      <point x="3167.104589994554" y="709.0" />
+      <point x="34.90909090909099" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.LogInController" target="co.gui_swing.ui.view.Log_in.LogInWindow">
+      <point x="84.0" y="-181.0" />
+      <point x="4338.446428571428" y="3581.0" />
+      <point x="4925.910714285714" y="3581.0" />
+      <point x="-49.75" y="126.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataProfit" target="co.gui_swing.ui.model.Setting">
+      <point x="-24.0" y="-115.5" />
+      <point x="1588.375" y="1071.0" />
+      <point x="1606.875" y="1071.0" />
+      <point x="1606.875" y="619.0" />
+      <point x="2758.5288324187964" y="619.0" />
+      <point x="-64.66666666666674" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataOrders" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="24.0" y="-115.5" />
+      <point x="449.0" y="1101.0" />
+      <point x="535.3383838383843" y="1101.0" />
+      <point x="535.3383838383843" y="649.0" />
+      <point x="2957.6500445400084" y="649.0" />
+      <point x="-174.5454545454545" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataOrders" target="co.gui_swing.ui.model.Setting">
+      <point x="-24.0" y="-115.5" />
+      <point x="401.0" y="1181.0" />
+      <point x="419.5" y="1181.0" />
+      <point x="419.5" y="609.0" />
+      <point x="2736.9732768632407" y="609.0" />
+      <point x="-86.22222222222217" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.ScheduleController" target="co.gui_swing.ui.view.schedule.ScheduleWindow">
+      <point x="54.799999999999955" y="-59.5" />
+      <point x="3648.9607142857144" y="1944.0" />
+      <point x="3731.160714285714" y="1944.0" />
+      <point x="68.5" y="104.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.TCPConnection" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="-40.0" y="-126.0" />
+      <point x="2888.6607142857147" y="679.0" />
+      <point x="3062.3773172672813" y="679.0" />
+      <point x="-69.81818181818176" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.SecretCode" target="co.gui_swing.ui.controller.MainFrameController">
+      <point x="-87.0" y="-70.5" />
+      <point x="4420.949467339431" y="2828.0" />
+      <point x="2060.09375" y="2828.0" />
+      <point x="94.875" y="192.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataProfit" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="24.0" y="-115.5" />
+      <point x="1636.375" y="1071.0" />
+      <point x="1617.875" y="1071.0" />
+      <point x="1617.875" y="659.0" />
+      <point x="2992.5591354490994" y="659.0" />
+      <point x="-139.63636363636374" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.CheckController" target="co.gui_swing.ui.view.Check.CheckWindow">
+      <point x="-15.8125" y="-170.0" />
+      <point x="2035.1875" y="1914.0" />
+      <point x="1970.625" y="1914.0" />
+      <point x="44.75" y="236.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.ProfitController" target="co.gui_swing.ui.model.Receive.ReceiveDataProfit">
+      <point x="100.0" y="-59.5" />
+      <point x="1466.0" y="1964.0" />
+      <point x="1612.375" y="1964.0" />
+      <point x="0.0" y="115.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.TCPConnection" target="co.gui_swing.ui.model.Setting">
+      <point x="-120.0" y="-126.0" />
+      <point x="2808.6607142857147" y="639.0" />
+      <point x="2823.195499085463" y="639.0" />
+      <point x="0.0" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.OrdersController" target="co.gui_swing.ui.model.Receive.ReceiveDataOrders">
+      <point x="20.75" y="-71.0" />
+      <point x="421.84273515227414" y="1964.0" />
+      <point x="425.0" y="1964.0" />
+      <point x="0.0" y="115.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataSchedule" target="co.gui_swing.ui.model.Data.DataScheduleLine">
+      <point x="168.0" y="-115.5" />
+      <point x="3480.660714285714" y="1171.0" />
+      <point x="3567.9940476190477" y="1171.0" />
+      <point x="-23.666666666666742" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveLogIn" target="co.gui_swing.ui.model.Data.DataUser">
+      <point x="-164.57142857142844" y="-159.5" />
+      <point x="3848.089285714286" y="1081.0" />
+      <point x="2371.034699437988" y="1081.0" />
+      <point x="89.71428571428532" y="103.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.Service.MainWindow" target="co.gui_swing.ui.view.Service.MainWindow.openProfitWindow">
+      <point x="0.0" y="-346.5" />
+      <point x="-79.66666666666652" y="37.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.SecretCode" target="co.gui_swing.ui.view.secretCode.SecretCodeWindow">
+      <point x="87.0" y="-70.5" />
+      <point x="44.0" y="71.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveCheck" target="co.gui_swing.ui.model.Setting">
+      <point x="-144.0" y="-170.5" />
+      <point x="2083.375" y="1071.0" />
+      <point x="2004.7177351522741" y="1071.0" />
+      <point x="2004.7177351522741" y="629.0" />
+      <point x="2780.084387974352" y="629.0" />
+      <point x="-43.111111111111086" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.controller.CheckController">
+      <point x="10.541666666666515" y="-192.0" />
+      <point x="1975.7604166666665" y="2344.0" />
+      <point x="2051.0" y="2344.0" />
+      <point x="0.0" y="170.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RegistrationController" target="co.gui_swing.ui.view.Registration.RegistrationWindow">
+      <point x="0.0" y="-137.0" />
+      <point x="4724.660714285714" y="3217.0" />
+      <point x="4714.949467339431" y="3217.0" />
+      <point x="-56.5" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveLogIn" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="164.57142857142833" y="-159.5" />
+      <point x="4177.232142857143" y="1171.0" />
+      <point x="4658.4643710760465" y="1171.0" />
+      <point x="4658.4643710760465" y="609.0" />
+      <point x="3236.9227718127354" y="609.0" />
+      <point x="104.72727272727252" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.controller.ScheduleController">
+      <point x="115.95833333333348" y="-192.0" />
+      <point x="2081.1770833333335" y="2394.0" />
+      <point x="3594.160714285714" y="2394.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveCheck" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="48.0" y="-170.5" />
+      <point x="2275.375" y="1171.0" />
+      <point x="2867.7083333333335" y="1171.0" />
+      <point x="-60.95238095238096" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveRegistration" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="-48.0" y="-148.5" />
+      <point x="4874.948365785041" y="1001.0" />
+      <point x="3081.041666666667" y="1001.0" />
+      <point x="152.3809523809523" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataOrders" target="co.gui_swing.ui.model.Data.DataOrderLine">
+      <point x="-120.0" y="-115.5" />
+      <point x="305.0" y="1181.0" />
+      <point x="306.75" y="1181.0" />
+      <point x="102.25" y="125.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.ProfitController" target="co.gui_swing.ui.view.Profit.ProfitWindow">
+      <point x="-60.0" y="-59.5" />
+      <point x="1306.0" y="1964.0" />
+      <point x="1304.5" y="1964.0" />
+      <point x="45.5" y="104.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveChangePassword" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="144.0" y="-159.5" />
+      <point x="4560.660714285714" y="1181.0" />
+      <point x="4669.4643710760465" y="1181.0" />
+      <point x="4669.4643710760465" y="599.0" />
+      <point x="3271.8318627218264" y="599.0" />
+      <point x="139.6363636363635" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.schedule.ScheduleWindow" target="co.gui_swing.ui.model.Data.DataScheduleLine">
+      <point x="0.0" y="-104.5" />
+      <point x="71.0" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RegistrationController" target="co.gui_swing.ui.controller.LogInController">
+      <point x="87.66666666666697" y="137.0" />
+      <point x="4812.327380952382" y="3571.0" />
+      <point x="4317.446428571428" y="3571.0" />
+      <point x="63.0" y="-181.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataProfit" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="120.0" y="-115.5" />
+      <point x="1732.375" y="1151.0" />
+      <point x="2837.232142857143" y="1151.0" />
+      <point x="-91.42857142857133" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.controller.MainFrameController">
+      <point x="-62.888888888888914" y="-137.0" />
+      <point x="3898.200396825397" y="3197.0" />
+      <point x="2052.09375" y="3197.0" />
+      <point x="2052.09375" y="2828.0" />
+      <point x="1996.84375" y="2828.0" />
+      <point x="31.625" y="192.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataWorkers" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="42.66666666666697" y="-137.5" />
+      <point x="2807.170588007263" y="1934.0" />
+      <point x="2902.4226190476193" y="1934.0" />
+      <point x="2902.4226190476193" y="1181.0" />
+      <point x="2898.184523809524" y="1181.0" />
+      <point x="-30.476190476190368" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.view.RestorationWindow.RestorationWindow">
+      <point x="0.0" y="-137.0" />
+      <point x="3961.089285714286" y="3217.0" />
+      <point x="3975.6572282189036" y="3217.0" />
+      <point x="-46.0" y="104.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.model.Receive.ReceiveDataUser">
+      <point x="31.625" y="-192.0" />
+      <point x="1996.84375" y="2354.0" />
+      <point x="2440.875" y="2354.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.model.Receive.ReceiveLogIn">
+      <point x="-31.444444444444343" y="-137.0" />
+      <point x="3929.6448412698414" y="3217.0" />
+      <point x="3919.1572282189036" y="3217.0" />
+      <point x="3919.1572282189036" y="1964.0" />
+      <point x="3902.946428571429" y="1964.0" />
+      <point x="-109.71428571428532" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.CheckController" target="co.gui_swing.ui.view.Service.MainWindow">
+      <point x="-110.6875" y="-170.0" />
+      <point x="1940.3125" y="1944.0" />
+      <point x="1109.5" y="1944.0" />
+      <point x="115.5" y="346.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveLogIn" target="co.gui_swing.ui.model.Setting">
+      <point x="109.71428571428521" y="-159.5" />
+      <point x="4122.375" y="1181.0" />
+      <point x="4170.677556580845" y="1181.0" />
+      <point x="4170.677556580845" y="629.0" />
+      <point x="2866.306610196574" y="629.0" />
+      <point x="43.111111111111086" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataSchedule" target="co.gui_swing.ui.model.Setting">
+      <point x="-24.0" y="-115.5" />
+      <point x="3288.660714285714" y="1151.0" />
+      <point x="3099.160714285714" y="1151.0" />
+      <point x="3099.160714285714" y="639.0" />
+      <point x="2844.7510546410185" y="639.0" />
+      <point x="21.555555555555657" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveRegistration" target="co.gui_swing.ui.model.Setting">
+      <point x="48.0" y="-148.5" />
+      <point x="4970.948365785041" y="1181.0" />
+      <point x="5013.448365785041" y="1181.0" />
+      <point x="5013.448365785041" y="589.0" />
+      <point x="2909.4177213076855" y="589.0" />
+      <point x="86.2222222222224" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveLogIn" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="54.85714285714312" y="-159.5" />
+      <point x="4067.5178571428573" y="1041.0" />
+      <point x="3020.0892857142862" y="1041.0" />
+      <point x="91.42857142857156" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.OrdersController" target="co.gui_swing.ui.model.Data.DataOrderLine">
+      <point x="-20.75" y="-71.0" />
+      <point x="380.34273515227414" y="1944.0" />
+      <point x="113.25" y="1944.0" />
+      <point x="113.25" y="1181.0" />
+      <point x="170.41666666666652" y="1181.0" />
+      <point x="-34.083333333333485" y="125.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataSchedule" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="24.0" y="-115.5" />
+      <point x="3336.660714285714" y="709.0" />
+      <point x="3202.0136809036444" y="709.0" />
+      <point x="69.81818181818153" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.CheckController" target="co.gui_swing.ui.model.Data.DataWorker">
+      <point x="79.0625" y="-170.0" />
+      <point x="2130.0625" y="1944.0" />
+      <point x="2472.2321428571427" y="1944.0" />
+      <point x="-125.14285714285734" y="126.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.Service.MainWindow" target="co.gui_swing.ui.view.Service.MainWindow.openOrdersWindow">
+      <point x="-88.0" y="-346.5" />
+      <point x="906.0" y="1091.0" />
+      <point x="783.1717171717173" y="1091.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.CheckController" target="co.gui_swing.ui.model.Data.DataUser">
+      <point x="-79.0625" y="-170.0" />
+      <point x="1971.9375" y="1934.0" />
+      <point x="1825.875" y="1934.0" />
+      <point x="1825.875" y="1101.0" />
+      <point x="2236.4632708665595" y="1101.0" />
+      <point x="-44.85714285714312" y="103.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RegistrationController" target="co.gui_swing.ui.model.Receive.ReceiveRegistration">
+      <point x="75.14285714285688" y="-137.0" />
+      <point x="4799.803571428571" y="3207.0" />
+      <point x="4917.448365785041" y="3207.0" />
+      <point x="4917.448365785041" y="1964.0" />
+      <point x="4826.948365785041" y="1964.0" />
+      <point x="-96.0" y="148.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.LogInController" target="co.gui_swing.ui.controller.RegistrationController">
+      <point x="21.0" y="-181.0" />
+      <point x="4275.446428571428" y="3551.0" />
+      <point x="4636.994047619048" y="3551.0" />
+      <point x="-87.66666666666697" y="137.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveChangePassword" target="co.gui_swing.ui.model.Setting">
+      <point x="48.0" y="-159.5" />
+      <point x="4464.660714285714" y="619.0" />
+      <point x="2887.86216575213" y="619.0" />
+      <point x="64.66666666666674" y="279.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataWorkers" target="co.gui_swing.ui.model.Data.DataWorker">
+      <point x="-42.66666666666629" y="-137.5" />
+      <point x="125.14285714285734" y="126.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveChangePassword" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="-144.0" y="-159.5" />
+      <point x="4272.660714285714" y="1031.0" />
+      <point x="3035.3273809523807" y="1031.0" />
+      <point x="106.66666666666652" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveRegistration" target="co.gui_swing.ui.model.TCPConnectionListener">
+      <point x="144.0" y="-148.5" />
+      <point x="5066.948365785041" y="1181.0" />
+      <point x="5151.9643710760465" y="1181.0" />
+      <point x="5151.9643710760465" y="579.0" />
+      <point x="3306.7409536309174" y="579.0" />
+      <point x="174.5454545454545" y="70.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RegistrationController" target="co.gui_swing.ui.model.Receive.ReceiveLogIn">
+      <point x="-112.71428571428623" y="-137.0" />
+      <point x="4611.9464285714275" y="3217.0" />
+      <point x="4355.949467339431" y="3217.0" />
+      <point x="4355.949467339431" y="1924.0" />
+      <point x="4122.375" y="1924.0" />
+      <point x="109.71428571428521" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.TCPConnectionListener" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="0.0" y="70.0" />
+      <point x="3132.195499085463" y="699.0" />
+      <point x="3048.6607142857147" y="699.0" />
+      <point x="120.0" y="-126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.view.RestorationWindow.NewPasswordWindow">
+      <point x="-125.77777777777783" y="-137.0" />
+      <point x="3835.311507936508" y="3217.0" />
+      <point x="1887.84375" y="3217.0" />
+      <point x="-51.25" y="104.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataUser" target="co.gui_swing.ui.model.Receive.ReceiveLogIn">
+      <point x="55.0" y="-37.5" />
+      <point x="2495.875" y="1964.0" />
+      <point x="3848.089285714286" y="1964.0" />
+      <point x="-164.57142857142844" y="159.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.LogInController" target="co.gui_swing.ui.controller.MainFrameController">
+      <point x="-84.0" y="-181.0" />
+      <point x="4170.446428571428" y="3581.0" />
+      <point x="1826.09375" y="3581.0" />
+      <point x="1826.09375" y="2828.0" />
+      <point x="1933.59375" y="2828.0" />
+      <point x="-31.625" y="192.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.controller.OrdersController">
+      <point x="-115.95833333333303" y="-192.0" />
+      <point x="1849.260416666667" y="2394.0" />
+      <point x="401.09273515227414" y="2394.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.model.Data.DataUser">
+      <point x="-10.541666666666515" y="-192.0" />
+      <point x="1954.6770833333335" y="2344.0" />
+      <point x="1814.875" y="2344.0" />
+      <point x="1814.875" y="1091.0" />
+      <point x="2191.606128009417" y="1091.0" />
+      <point x="-89.71428571428578" y="103.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.OrdersController" target="co.gui_swing.ui.view.OrdersWindow.OrdersWindow">
+      <point x="103.75" y="-71.0" />
+      <point x="504.84273515227414" y="1964.0" />
+      <point x="774.25" y="1964.0" />
+      <point x="45.75" y="93.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataSchedule" target="co.gui_swing.ui.model.TCPConnection">
+      <point x="-168.0" y="-115.5" />
+      <point x="3144.660714285714" y="1181.0" />
+      <point x="2943.89880952381" y="1181.0" />
+      <point x="15.238095238095411" y="126.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.model.Receive.ReceiveDataProfit" target="co.gui_swing.ui.model.Data.DataProfitLine">
+      <point x="-168.0" y="-115.5" />
+      <point x="1444.375" y="1071.0" />
+      <point x="1460.5" y="1071.0" />
+      <point x="22.25" y="70.5" />
+    </edge>
+    <edge source="co.gui_swing.Runner" target="co.gui_swing.ui.controller.LogInController">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="181.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.model.Data.DataWorker">
+      <point x="52.708333333333485" y="-192.0" />
+      <point x="2017.9270833333335" y="2364.0" />
+      <point x="2562.0039213405958" y="2364.0" />
+      <point x="2562.0039213405958" y="1954.0" />
+      <point x="2555.660714285714" y="1954.0" />
+      <point x="-41.71428571428578" y="126.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.view.Service.MainWindow">
+      <point x="-73.79166666666652" y="-192.0" />
+      <point x="1891.4270833333335" y="2374.0" />
+      <point x="955.5" y="2374.0" />
+      <point x="-38.5" y="346.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.RestorationController" target="co.gui_swing.ui.controller.LogInController">
+      <point x="70.75" y="137.0" />
+      <point x="4031.839285714286" y="3561.0" />
+      <point x="4212.446428571428" y="3561.0" />
+      <point x="-42.0" y="-181.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.MainFrameController" target="co.gui_swing.ui.controller.LogInController">
+      <point x="-94.875" y="192.0" />
+      <point x="1870.34375" y="2818.0" />
+      <point x="1815.09375" y="2818.0" />
+      <point x="1815.09375" y="3591.0" />
+      <point x="4149.446428571428" y="3591.0" />
+      <point x="-105.0" y="-181.0" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.CheckController" target="co.gui_swing.ui.model.Receive.ReceiveCheck">
+      <point x="15.8125" y="-170.0" />
+      <point x="2066.8125" y="1924.0" />
+      <point x="2131.375" y="1924.0" />
+      <point x="-96.0" y="170.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.view.Service.MainWindow.openOrdersWindow" target="co.gui_swing.ui.view.Service.MainWindow">
+      <point x="79.66666666666652" y="37.5" />
+      <point x="862.8383838383838" y="1081.0" />
+      <point x="950.0" y="1081.0" />
+      <point x="-44.0" y="-346.5" />
+    </edge>
+    <edge source="co.gui_swing.ui.controller.ScheduleController" target="co.gui_swing.ui.model.Receive.ReceiveDataSchedule">
+      <point x="-109.60000000000014" y="-59.5" />
+      <point x="3484.5607142857143" y="1954.0" />
+      <point x="3312.660714285714" y="1954.0" />
+      <point x="0.0" y="115.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="4105.333333333329" y="1679.1666666666652" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

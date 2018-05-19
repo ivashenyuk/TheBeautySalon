@@ -50,9 +50,9 @@ public class CheckController {
         this.confirmBtn = this.checkWindow.getConfirmBtn();
         this.dateOrder = this.checkWindow.getDateOrder();
 
-        this.kingOfServiceLable.setText(this.dataWorker.getKingOfServiceWorker());
+        this.kingOfServiceLable.setText(this.dataWorker.getPriceWorker());
         this.workerLable.setText(this.dataWorker.getNameWorker());
-        this.priceLable.setText(this.dataWorker.getPriceWorker());
+        this.priceLable.setText(this.dataWorker.getKingOfServiceWorker());
         this.emailLable.setText(this.dataUser.getEmailUser());
         this.customer.setText(trim(this.dataUser.getNameUser()));
 

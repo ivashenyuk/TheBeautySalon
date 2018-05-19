@@ -61,7 +61,7 @@ public class ProfitWindow extends JDialog {
                     new Object[][] {
                     },
                     new String[] {
-                        "\u0406\u043c'\u044f", "\u041f\u0440\u0438\u0431\u0443\u0442\u043e\u043a \u0444\u0456\u0440\u043c\u0438", "\u0417/\u041f \u041f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430"
+                        "Сервіс", "\u041f\u0440\u0438\u0431\u0443\u0442\u043e\u043a \u0444\u0456\u0440\u043c\u0438", "\u0417/\u041f \u041f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0430"
                     }
                 ) {
                     Class<?>[] columnTypes = new Class<?>[] {
